@@ -16,6 +16,7 @@ function Seo({ title, children }) {
   )
 
   const defaultTitle = `${title} - ${site.siteMetadata?.title}`
+  const description = site.siteMetadata?.description
 
   return (
     <>
