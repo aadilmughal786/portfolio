@@ -10,12 +10,16 @@
 module.exports = {
   siteMetadata: {
     title: `Aadil`,
-    description: `Portfolio website`,
-    author: `aadilshe786@gmail.com`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    description: `Portfolio website of Aadil Mugal`,
+    author: `Aadil Mugal <aadilshe786@gmail.com>`,
+    // siteUrl: ``,
   },
+
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -23,12 +27,11 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Aadil`,
         short_name: `AM`,
         start_url: `/`,
         background_color: `#663399`,
