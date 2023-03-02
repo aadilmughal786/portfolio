@@ -43,5 +43,21 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+
+    {
+      resolve: "gatsby-omni-font-loader",
+      options: {
+        mode: "async",
+        enableListener: true,
+        preconnect: ["https://fonts.gstatic.com"],
+
+        web: [
+          {
+            name: "Poppins",
+            file: "https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap",
+          },
+        ],
+      },
+    },
   ],
 }
