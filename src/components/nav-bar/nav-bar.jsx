@@ -1,46 +1,54 @@
 import * as React from "react"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 import { Bars3Icon, XMarkIcon, HeartIcon } from "@heroicons/react/24/solid"
-
 import ThemeToggleBtn from "./theme-toggle-btn"
+import { Link } from "gatsby"
+import data from "../../data/nav-bar"
+
+const socilaIconStyle =
+  "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
 
 const NavBar = () => (
-  <div className="sticky top-0 z-40 w-full backdrop-blur transition-colors duration-500 lg:z-50 border-b border-slate-900/10 dark:border-slate-50/[0.06] bg-white/95 supports-backdrop-blur:bg-white/60 dark:bg-transparent px-4 sm:px-8 py-3 flex justify-between items-center">
-    <div className="font-bold text-xl text-sky-700 hover:text-sky-900 dark:text-sky-400 dark:hover:text-sky-200">
-      Aa <HeartIcon className="inline-block w-5 h-5" />
+  <div className="supports-backdrop-blur:bg-white/60 sticky top-0 z-40 flex w-full items-center justify-between border-b border-slate-900/10 bg-white/95 px-4 py-3 backdrop-blur transition-colors duration-200 dark:border-slate-50/[0.06] dark:bg-transparent sm:px-8">
+    {/* left-part :: site logo */}
+    <Link
+      to={data.left.to}
+      className="text-xl font-bold text-sky-500 hover:text-sky-900 dark:text-sky-400 dark:hover:text-sky-300"
+    >
+      {data.left.siteName} <HeartIcon className="inline-block h-5 w-5" />
+    </Link>
+
+    {/* mid-part :: options */}
+    <div className="hidden items-center gap-4 text-sm font-medium leading-6 text-slate-700 dark:text-slate-200 md:flex">
+      {data.mid.map(item => (
+        <Link
+          key={item.id}
+          to={item.to}
+          className="font-semibold text-slate-600 hover:text-sky-900 dark:text-slate-300 dark:hover:text-sky-300"
+        >
+          {item.label}
+        </Link>
+      ))}
     </div>
-    <div className="hidden md:flex gap-4 items-center text-sm leading-6 font-medium text-slate-700 dark:text-slate-200">
-      <a className="hover:text-sky-500 dark:hover:text-sky-400 cursor-pointer">
-        Home
-      </a>
-      <a className="hover:text-sky-500 dark:hover:text-sky-400 cursor-pointer">
-        Project
-      </a>
-      <a className="hover:text-sky-500 dark:hover:text-sky-400 cursor-pointer">
-        Contact
-      </a>
-      <a className="hover:text-sky-500 dark:hover:text-sky-400 cursor-pointer">
-        Resume
-      </a>
-    </div>
-    <div className="flex gap-8 items-center">
-      <div className="hidden sm:flex gap-4 items-center">
-        <ThemeToggleBtn />
-        <a>
-          <FaGithub
-            size={20}
-            className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 cursor-pointer"
-          />
+
+    {/* right-part :: links, theme and toggle-btn */}
+    <div className="inline-flex items-center gap-4">
+      {/* theme switch btn */}
+      <ThemeToggleBtn />
+
+      {/* socail site icons */}
+      <div className="hidden items-center gap-4 border-r border-slate-900/10 pr-4 dark:border-slate-50/[0.1] sm:flex md:border-0 md:pr-0">
+        <a href={data.right.gitHubLink}>
+          <FaGithub size={19} className={socilaIconStyle} />
         </a>
-        <a>
-          <FaLinkedin
-            size={20}
-            className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 cursor-pointer"
-          />
+        <a href={data.right.linkInLink}>
+          <FaLinkedin size={19} className={socilaIconStyle} />
         </a>
       </div>
+
+      {/* drawer toggler btn */}
       <div className="md:hidden ">
-        <Bars3Icon className="w-6 dark:text-white" />
+        <Bars3Icon className={`h-6 w-6 ${socilaIconStyle}`} />
         {/* <XMarkIcon className="w-6 dark:text-white" /> */}
       </div>
     </div>

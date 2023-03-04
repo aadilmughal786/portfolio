@@ -7,21 +7,25 @@ const THEME = {
   dark: "dark",
 }
 
+// This is common style for both icons
+const styleForIcon =
+  "h-5 w-5 cursor-pointer text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
+
 export default function ThemeToggleBtn() {
   return (
     <ThemeToggler>
       {({ theme, toggleTheme }) => {
         return (
-          <div>
+          <div className="border-r border-slate-900/10 pr-4 dark:border-slate-50/[0.1]">
             {theme === THEME.dark ? (
               <MoonIcon
                 onClick={e => toggleTheme(theme === "light" ? "dark" : "light")}
-                className="w-5 h-5 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 cursor-pointer"
+                className={styleForIcon}
               />
             ) : (
               <SunIcon
                 onClick={e => toggleTheme(theme === "light" ? "dark" : "light")}
-                className="w-5 h-5 text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 cursor-pointer"
+                className={styleForIcon}
               />
             )}
           </div>
