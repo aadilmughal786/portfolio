@@ -5,9 +5,11 @@
   "version": "1.0.0",
   "author": "Aadil Mugal <aadilshe786@gmail.com>",
   "dependencies": {
+    "@heroicons/react": "^2.0.16",
     "framer-motion": "^10.0.1",
     "gatsby": "^5.7.0",
     "gatsby-omni-font-loader": "^2.0.2",
+    "gatsby-plugin-dark-mode": "^1.1.2",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
     "gatsby-plugin-sharp": "^5.7.0",
