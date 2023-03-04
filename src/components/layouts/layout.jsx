@@ -4,11 +4,11 @@ import NavBar from "../nav-bar/nav-bar"
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="dark:bg-slate-800 min-h-screen flex flex-col justify-between">
       <NavBar />
-      <main>{children}</main>
+      <main className="container mx-auto px-3">{children}</main>
       <Footer />
-    </>
+    </div>
   )
 }
 

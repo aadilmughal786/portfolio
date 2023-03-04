@@ -20,6 +20,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-postcss`,
+    `gatsby-plugin-dark-mode`,
 
     {
       resolve: `gatsby-source-filesystem`,
@@ -54,7 +55,7 @@ module.exports = {
         web: [
           {
             name: "Poppins",
-            file: "https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;800&display=swap",
+            file: "https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap",
           },
         ],
       },
