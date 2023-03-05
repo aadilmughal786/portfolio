@@ -1,6 +1,6 @@
 import React from "react"
 import { HeartIcon } from "@heroicons/react/24/solid"
-import { FaArrowUp } from "react-icons/fa"
+import { FiArrowUp } from "react-icons/fi"
 import data from "../../data/footer/index"
 
 const Anchor = ({ label, link }) => (
@@ -28,7 +28,7 @@ const Footer = () => {
       {/* go to top btn */}
       <div className="ml-4 flex h-full items-center justify-center sm:ml-8 ">
         <a href="#">
-          <FaArrowUp
+          <FiArrowUp
             size={19}
             className="text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-sky-300"
           />
