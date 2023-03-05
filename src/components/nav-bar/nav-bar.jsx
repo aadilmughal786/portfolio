@@ -9,7 +9,7 @@ const socilaIconStyle =
   "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
 
 const NavBar = () => (
-  <div className="supports-backdrop-blur:bg-white/60 sticky top-0 z-40 flex w-full items-center justify-between border-b border-slate-900/10 bg-white/95 px-4 py-3 backdrop-blur transition-colors duration-200 dark:border-slate-50/[0.06] dark:bg-transparent sm:px-8">
+  <div className="supports-backdrop-blur:bg-white/60 sticky top-0 z-40 flex w-full items-center justify-between border-b border-slate-900/10 bg-white/95 px-4 py-3 backdrop-blur dark:border-slate-50/[0.06] dark:bg-transparent sm:px-8">
     {/* left-part :: site logo */}
     <Link
       to={data.left.to}

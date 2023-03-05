@@ -4,7 +4,7 @@ import NavBar from "../nav-bar/nav-bar"
 
 const Layout = ({ children }) => {
   return (
-    <div className="dark:bg-slate-800 min-h-screen flex flex-col justify-between">
+    <div className="flex min-h-screen flex-col justify-between transition-colors dark:bg-slate-800">
       <NavBar />
       <main className="container mx-auto px-3">{children}</main>
       <Footer />

@@ -1,6 +1,3 @@
-import { HeartIcon } from "@heroicons/react/24/solid"
-import { FaGithub, FaLinkedin } from "react-icons/fa"
-
 const data = {
   left: {
     siteName: "Aa",
