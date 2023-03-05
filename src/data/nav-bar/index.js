@@ -39,13 +39,13 @@ const data = {
     },
     {
       id: 3,
-      label: "Project",
+      label: "Resume",
       icon: <DocumentIcon className={`h-5 w-5 ${socilaIconStyle}`} />,
       to: "/",
     },
     {
       id: 4,
-      label: "Resume",
+      label: "Projects",
       icon: <BeakerIcon className={`h-5 w-5 ${socilaIconStyle}`} />,
       to: "/",
     },
