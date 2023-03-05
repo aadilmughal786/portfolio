@@ -12,7 +12,7 @@ const NavBar = () => {
       <div
         className={` flex items-center justify-between px-4 sm:px-8 ${
           drawer &&
-          " border-b  pb-3 dark:border-slate-50/[0.06] dark:bg-transparent "
+          " border-b pb-3 dark:border-slate-50/[0.06] dark:bg-transparent md:border-b-0 md:pb-0 "
         }`}
       >
         {/* left-part :: site logo */}
