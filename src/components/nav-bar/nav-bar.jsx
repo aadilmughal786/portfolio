@@ -93,6 +93,7 @@ const NavBar = () => {
             </a>
           ))}
         </div>
+        {/* made with gatsby */}
         <div className="flex items-center gap-4 border-t border-slate-900/10 px-4 pt-3 text-slate-700 dark:border-slate-50/[0.1] dark:text-slate-200 sm:hidden sm:px-8 md:border-0 md:pr-0">
           {data.made.text1}
           <HeartIcon className="inline-block h-4 w-4 text-red-400 " />
