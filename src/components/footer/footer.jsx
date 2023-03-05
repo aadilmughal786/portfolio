@@ -1,13 +1,6 @@
 import React from "react"
-import { HeartIcon } from "@heroicons/react/24/solid"
-import { FiArrowUp } from "react-icons/fi"
 import data from "../../data/footer/index"
-
-const Anchor = ({ label, link }) => (
-  <a href={link} className="hover:text-sky-900 dark:hover:text-sky-300">
-    {label}
-  </a>
-)
+import Anchor from "./anchor"
 
 const Footer = () => {
   return (
@@ -19,7 +12,7 @@ const Footer = () => {
         </div>
         <div className="hidden border-l border-slate-900/10 pl-4 dark:border-slate-50/[0.1] sm:block">
           {data.made.text1}
-          <HeartIcon className="inline-block h-4 w-4 text-red-400 " />
+          {data.made.heartIcon}
           {data.made.text2}
           <Anchor {...data.made.gatsby} />
         </div>
@@ -27,12 +20,7 @@ const Footer = () => {
 
       {/* go to top btn */}
       <div className="ml-4 flex h-full items-center justify-center sm:ml-8 ">
-        <a href="#">
-          <FiArrowUp
-            size={19}
-            className="text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-sky-300"
-          />
-        </a>
+        <a href="#">{data.goToTopIcon}</a>
       </div>
     </div>
   )
