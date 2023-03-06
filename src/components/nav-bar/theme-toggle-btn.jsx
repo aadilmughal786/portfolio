@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
 import { MoonIcon, SunIcon } from "@heroicons/react/24/solid"
 

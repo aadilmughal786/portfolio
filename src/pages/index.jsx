@@ -1,13 +1,15 @@
 import * as React from "react"
 import Seo from "../components/seo/seo"
 import Layout from "../components/layouts/layout"
-import IntroSection from "../components/intro-section/intro-section"
+import SkillSection from "../components/skill-section/skill-section"
+import data from "../data/home/skill-section"
 
 const HomePage = () => (
   <Layout>
+    {/* <IntroSection />
     <IntroSection />
-    <IntroSection />
-    <IntroSection />
+    <IntroSection /> */}
+    <SkillSection data={data} />
   </Layout>
 )
 
