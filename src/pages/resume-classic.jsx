@@ -5,6 +5,7 @@ import CardItem from "../components/resume-classic/card-item"
 import Contact from "../components/resume-classic/contact"
 import Course from "../components/resume-classic/course"
 import Education from "../components/resume-classic/education"
+import Skill from "../components/resume-classic/skill"
 import Seo from "../components/seo/seo"
 import data from "../data/resume-classic/index"
 
@@ -48,6 +49,21 @@ const Resume = () => {
             {data.courseData.item.map(item => (
               <CardItem>
                 <Course key={item.id} data={item} />
+              </CardItem>
+            ))}
+          </Card>
+        </div>
+
+        {/* Skills */}
+
+        <div>
+          <Card icon={data.skillData.icon} title={data.skillData.title}>
+            {data.skillData.items.map(item => (
+              <CardItem>
+                <div className="font-medium">{item.label}</div>
+                {item.items.map(item => (
+                  <Skill data={item} />
+                ))}
               </CardItem>
             ))}
           </Card>
