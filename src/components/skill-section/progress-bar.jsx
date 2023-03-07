@@ -4,7 +4,9 @@ const ProgressBar = ({ label, value }) => {
   return (
     <div className="relative mt-9 h-1 w-full rounded-2xl bg-slate-100 dark:bg-slate-700">
       <div
-        style={{ width: `${value}%` }}
+        style={{
+          width: `${value}%`,
+        }}
         className={`absolute top-0 left-0 h-full rounded-2xl bg-sky-500 text-white`}
       >
         <span className="absolute right-0 top-1/2 -translate-y-1/2  rounded-full bg-sky-500 py-[6px] px-[6px] "></span>
