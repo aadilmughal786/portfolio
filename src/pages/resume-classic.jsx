@@ -17,8 +17,8 @@ const Resume = () => {
         <div className="lg:col-span-2">
           <Card icon={data.eduData.icon} title={data.eduData.title}>
             {data.eduData.item.map(item => (
-              <CardItem>
-                <Education key={item.id} data={item} />
+              <CardItem key={item.id}>
+                <Education data={item} />
               </CardItem>
             ))}
           </Card>
@@ -28,7 +28,7 @@ const Resume = () => {
         <div>
           <Card icon={data.contactData.icon} title={data.contactData.title}>
             {data.contactData.item.map(item => (
-              <CardItem>
+              <CardItem key={item.id}>
                 <Contact data={item} />
               </CardItem>
             ))}
@@ -47,8 +47,8 @@ const Resume = () => {
         <div className="lg:col-span-2">
           <Card icon={data.courseData.icon} title={data.courseData.title}>
             {data.courseData.item.map(item => (
-              <CardItem>
-                <Course key={item.id} data={item} />
+              <CardItem key={item.id}>
+                <Course data={item} />
               </CardItem>
             ))}
           </Card>
@@ -59,10 +59,10 @@ const Resume = () => {
         <div>
           <Card icon={data.skillData.icon} title={data.skillData.title}>
             {data.skillData.items.map(item => (
-              <CardItem>
+              <CardItem key={item.id}>
                 <div className="font-medium">{item.label}</div>
                 {item.items.map(item => (
-                  <Skill data={item} />
+                  <Skill key={item.id} data={item} />
                 ))}
               </CardItem>
             ))}
