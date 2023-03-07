@@ -6,7 +6,7 @@ import {
   FaUserGraduate,
 } from "react-icons/fa"
 
-const socilaIconStyle =
+export const socilaIconStyle =
   "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
 
 const data = {
