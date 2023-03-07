@@ -8,7 +8,7 @@ const Education = ({ data }) => {
         <div className="w-full">
           <div className="flex flex-wrap items-center justify-between gap-x-8">
             <div className="font-medium">{data.educationType}</div>
-            <div>{data.year}</div>
+            <div className="font-mono">{data.year}</div>
           </div>
           <div className="flex flex-wrap items-center justify-between gap-x-8 text-sky-700 dark:text-sky-300">
             <div>{data.instituteName}</div>
