@@ -6,6 +6,7 @@ import Contact from "../components/resume-classic/contact"
 import Course from "../components/resume-classic/course"
 import Education from "../components/resume-classic/education"
 import Intro from "../components/resume-classic/intro"
+import Project from "../components/resume-classic/project"
 import Skill from "../components/resume-classic/skill"
 import Seo from "../components/seo/seo"
 import data from "../data/resume-classic/index"
@@ -16,7 +17,7 @@ const Resume = () => {
 
   return (
     <Layout>
-      <div className="grid gap-y-8 gap-x-4 px-4 py-16 sm:px-8 lg:grid-cols-3">
+      <div className="grid gap-y-8 gap-x-8 px-4 py-16 sm:px-8 lg:grid-cols-3">
         {/* column-1 */}
         <div className="flex flex-col gap-y-8 lg:col-span-2">
           {/* Intro */}
@@ -56,6 +57,15 @@ const Resume = () => {
             {data.courseData.item.map(item => (
               <CardItem key={item.id}>
                 <Course data={item} />
+              </CardItem>
+            ))}
+          </Card>
+
+          {/* Projects */}
+          <Card icon={data.projectData.icon} title={data.projectData.title}>
+            {data.projectData.items.map(item => (
+              <CardItem key={item.id}>
+                <Project data={item} />
               </CardItem>
             ))}
           </Card>
