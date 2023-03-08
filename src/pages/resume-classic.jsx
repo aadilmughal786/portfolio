@@ -9,6 +9,7 @@ import GameOfTheDay from "../components/resume-classic/game-of-the-day"
 import Intro from "../components/resume-classic/intro"
 import Project from "../components/resume-classic/project"
 import Skill from "../components/resume-classic/skill"
+import Volunteering from "../components/resume-classic/volunteering"
 import Seo from "../components/seo/seo"
 import data from "../data/resume-classic/index"
 
@@ -67,6 +68,18 @@ const Resume = () => {
             {data.projectData.items.map(item => (
               <CardItem key={item.id}>
                 <Project data={item} />
+              </CardItem>
+            ))}
+          </Card>
+
+          {/* Volunteering */}
+          <Card
+            icon={data.volunteeringData.icon}
+            title={data.volunteeringData.title}
+          >
+            {data.volunteeringData.items.map(item => (
+              <CardItem key={item.id}>
+                <Volunteering data={item} />
               </CardItem>
             ))}
           </Card>

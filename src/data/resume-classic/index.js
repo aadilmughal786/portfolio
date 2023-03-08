@@ -6,6 +6,7 @@ import followData from "./follow"
 import introData from "./intro"
 import projectData from "./projects"
 import gameOfTheDayData from "./game-of-the-day"
+import volunteeringData from "./volunteering"
 
 const data = {
   eduData,
@@ -16,6 +17,7 @@ const data = {
   introData,
   projectData,
   gameOfTheDayData,
+  volunteeringData,
 }
 
 export default data
