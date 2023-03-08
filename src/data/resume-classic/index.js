@@ -4,6 +4,7 @@ import courseData from "./course"
 import skillData from "./skill"
 import followData from "./follow"
 import introData from "./intro"
+import projectData from "./projects"
 
 const data = {
   eduData,
@@ -12,6 +13,7 @@ const data = {
   skillData,
   followData,
   introData,
+  projectData,
 }
 
 export default data
