@@ -12,7 +12,7 @@ const Project = ({ data }) => {
           </div>
           <div className="flex flex-row flex-wrap gap-2">
             {data.chips.map(chip => (
-              <span className="rounded bg-sky-400 px-2 py-[2px] text-[10px] font-medium text-slate-800 dark:bg-sky-300 dark:text-black">
+              <span className="rounded bg-sky-400 px-2 py-[2px] text-[10px] font-medium text-slate-900/60 dark:bg-sky-300 dark:text-black">
                 {chip}
               </span>
             ))}
