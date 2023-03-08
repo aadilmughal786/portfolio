@@ -5,6 +5,7 @@ import CardItem from "../components/resume-classic/card-item"
 import Contact from "../components/resume-classic/contact"
 import Course from "../components/resume-classic/course"
 import Education from "../components/resume-classic/education"
+import GameOfTheDay from "../components/resume-classic/game-of-the-day"
 import Intro from "../components/resume-classic/intro"
 import Project from "../components/resume-classic/project"
 import Skill from "../components/resume-classic/skill"
@@ -136,6 +137,16 @@ const Resume = () => {
                 </button>
               )}
             </div>
+          </Card>
+
+          {/* Game Of The Day */}
+          <Card
+            icon={data.gameOfTheDayData.icon}
+            title={data.gameOfTheDayData.title}
+          >
+            <CardItem>
+              <GameOfTheDay data={data.gameOfTheDayData} />
+            </CardItem>
           </Card>
         </div>
       </div>
