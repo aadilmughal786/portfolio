@@ -6,7 +6,9 @@ const Contact = ({ data }) => {
     <div className="flex items-center gap-6">
       <div>{data.icon}</div>
       <div className="flex flex-row items-center gap-1 text-sky-700 dark:text-sky-300">
-        <a href={data.href}>{data.label}</a>
+        <a href={data.href} target="_blank">
+          {data.label}
+        </a>
         <TbExternalLink size={16} />
       </div>
     </div>

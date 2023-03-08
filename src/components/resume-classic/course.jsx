@@ -7,7 +7,9 @@ const Course = ({ data }) => {
       <div>{data.icon}</div>
       <div className="w-full">
         <div className="flex-row items-center gap-1 font-medium text-sky-700 dark:text-sky-300 sm:flex">
-          <a href={data.courseLink}>{data.courseName}</a>
+          <a href={data.courseLink} target="_blank">
+            {data.courseName}
+          </a>
           <TbExternalLink
             className="-mt-[3px] ml-1 inline-block sm:ml-0"
             size={16}
