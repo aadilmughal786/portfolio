@@ -44,7 +44,7 @@ const NavBar = () => {
           {/* socail site icons */}
           <div className="hidden items-center gap-4 border-r border-slate-900/10 pr-4 dark:border-slate-50/[0.1] sm:flex md:border-0 md:pr-0">
             {data.right.map(item => (
-              <a key={item.id} href={item.link}>
+              <a key={item.id} href={item.link} target="_blank">
                 {item.icon}
               </a>
             ))}
@@ -88,7 +88,7 @@ const NavBar = () => {
         {/* socail site icons mobile */}
         <div className="flex items-center gap-4 border-t border-slate-900/10 px-4 pt-3 dark:border-slate-50/[0.1] sm:hidden sm:px-8 md:border-0 md:pr-0">
           {data.right.map(item => (
-            <a key={item.id} href={item.link}>
+            <a key={item.id} href={item.link} target="_blank">
               {item.icon}
             </a>
           ))}
