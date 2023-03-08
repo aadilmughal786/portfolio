@@ -6,6 +6,7 @@ import Contact from "../components/resume-classic/contact"
 import Course from "../components/resume-classic/course"
 import Education from "../components/resume-classic/education"
 import GameOfTheDay from "../components/resume-classic/game-of-the-day"
+import Hobby from "../components/resume-classic/hobby"
 import Intro from "../components/resume-classic/intro"
 import Language from "../components/resume-classic/language"
 import Project from "../components/resume-classic/project"
@@ -168,6 +169,16 @@ const Resume = () => {
             {data.languageData.items.map(item => (
               <CardItem key={item.id}>
                 <Language data={item} />
+              </CardItem>
+            ))}
+          </Card>
+
+          {/* Hobbies */}
+          {/* Language */}
+          <Card icon={data.hobbiesData.icon} title={data.hobbiesData.title}>
+            {data.hobbiesData.items.map(item => (
+              <CardItem key={item.id}>
+                <Hobby data={item} />
               </CardItem>
             ))}
           </Card>

@@ -8,6 +8,7 @@ import projectData from "./projects"
 import gameOfTheDayData from "./game-of-the-day"
 import volunteeringData from "./volunteering"
 import languageData from "./languages"
+import hobbiesData from "./hobbies"
 
 const data = {
   eduData,
@@ -20,6 +21,7 @@ const data = {
   gameOfTheDayData,
   volunteeringData,
   languageData,
+  hobbiesData,
 }
 
 export default data
