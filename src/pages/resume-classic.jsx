@@ -5,6 +5,7 @@ import CardItem from "../components/resume-classic/card-item"
 import Contact from "../components/resume-classic/contact"
 import Course from "../components/resume-classic/course"
 import Education from "../components/resume-classic/education"
+import Intro from "../components/resume-classic/intro"
 import Skill from "../components/resume-classic/skill"
 import Seo from "../components/seo/seo"
 import data from "../data/resume-classic/index"
@@ -15,9 +16,32 @@ const Resume = () => {
 
   return (
     <Layout>
-      <div className="grid gap-x-4 px-4 py-16 sm:px-8 lg:grid-cols-3">
+      <div className="grid gap-y-8 gap-x-4 px-4 py-16 sm:px-8 lg:grid-cols-3">
         {/* column-1 */}
         <div className="flex flex-col gap-y-8 lg:col-span-2">
+          {/* Intro */}
+          <Card icon={data.introData.icon} title={data.introData.title}>
+            <CardItem>
+              <Intro data={data.introData} />
+            </CardItem>
+
+            {data.introData.about.map(item => (
+              <CardItem key={item.id}>{item.text}</CardItem>
+            ))}
+
+            {/* quote */}
+            <CardItem>
+              <div className="text-center sm:px-8">
+                <div className="mb-1 font-[Courgette] text-xl">
+                  {data.introData.quote.quote}
+                </div>
+                <div className="font-mono text-sky-700 dark:text-sky-300">
+                  {data.introData.quote.author}
+                </div>
+              </div>
+            </CardItem>
+          </Card>
+
           {/* Education */}
           <Card icon={data.eduData.icon} title={data.eduData.title}>
             {data.eduData.item.map(item => (
@@ -85,21 +109,21 @@ const Resume = () => {
                   </CardItem>
                 ))}
             </div>
-            <div className="cursor-pointer  py-1">
+            <div className="cursor-pointer">
               {isExpand ? (
-                <div
+                <button
                   onClick={e => setIsExpand(false)}
-                  className="flex justify-center"
+                  className="flex w-full justify-center py-1"
                 >
                   {data.followData.arrowUp}
-                </div>
+                </button>
               ) : (
-                <div
+                <button
                   onClick={e => setIsExpand(true)}
-                  className="flex justify-center"
+                  className="flex w-full justify-center py-1"
                 >
                   {data.followData.arrowDown}
-                </div>
+                </button>
               )}
             </div>
           </Card>
