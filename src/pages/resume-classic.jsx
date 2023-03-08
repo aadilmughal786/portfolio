@@ -12,6 +12,7 @@ import Language from "../components/resume-classic/language"
 import Project from "../components/resume-classic/project"
 import Skill from "../components/resume-classic/skill"
 import Volunteering from "../components/resume-classic/volunteering"
+import Youtube from "../components/resume-classic/youtube"
 import Seo from "../components/seo/seo"
 import data from "../data/resume-classic/index"
 
@@ -21,7 +22,7 @@ const Resume = () => {
 
   return (
     <Layout>
-      <div className="grid gap-y-8 gap-x-8 px-4 py-16 sm:px-8 lg:grid-cols-3">
+      <div className="grid gap-y-8 gap-x-8 px-4 pt-16 pb-20 sm:px-8 lg:grid-cols-3">
         {/* column-1 */}
         <div className="flex flex-col gap-y-8 lg:col-span-2">
           {/* Intro */}
@@ -174,13 +175,17 @@ const Resume = () => {
           </Card>
 
           {/* Hobbies */}
-          {/* Language */}
           <Card icon={data.hobbiesData.icon} title={data.hobbiesData.title}>
             {data.hobbiesData.items.map(item => (
               <CardItem key={item.id}>
                 <Hobby data={item} />
               </CardItem>
             ))}
+          </Card>
+
+          {/* Youtube */}
+          <Card icon={data.youtubeData.icon} title={data.youtubeData.title}>
+            <Youtube data={data.youtubeData} />
           </Card>
         </div>
       </div>
