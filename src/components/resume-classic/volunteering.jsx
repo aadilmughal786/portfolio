@@ -27,7 +27,9 @@ const Volunteering = ({ data }) => {
       <div>
         {data.descriptions.map(description => (
           <div>
-            <span className="font-semibold text-sky-500">{"⤏"}</span>{" "}
+            <span className="font-semibold text-sky-600 dark:text-sky-300 ">
+              {"⤏"}
+            </span>{" "}
             {description}
           </div>
         ))}

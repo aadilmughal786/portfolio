@@ -7,6 +7,7 @@ import introData from "./intro"
 import projectData from "./projects"
 import gameOfTheDayData from "./game-of-the-day"
 import volunteeringData from "./volunteering"
+import languageData from "./languages"
 
 const data = {
   eduData,
@@ -18,6 +19,7 @@ const data = {
   projectData,
   gameOfTheDayData,
   volunteeringData,
+  languageData,
 }
 
 export default data
