@@ -13,7 +13,7 @@ const Volunteering = ({ data }) => {
         <div className="mb-1">
           <div className="font-medium">{data.role}</div>
           <div className="flex flex-row flex-wrap gap-x-2 gap-y-1 text-sky-700 dark:text-sky-300">
-            <a href={data.organizationWebsite} target="_blank">
+            <a href={data.organizationWebsite} target="_blank" rel="noreferrer">
               <span>{data.organization}</span>
               <TbExternalLink
                 className="-mt-[3px] ml-1 inline-block sm:ml-0"

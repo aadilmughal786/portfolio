@@ -8,6 +8,7 @@ const Youtube = ({ data }) => {
           src={data.videoLink}
           frameborder="0"
           className="aspect-video w-full border-0"
+          title={data.iframeTitle}
         ></iframe>
       </div>
       <div className="flex flex-row items-center justify-center gap-x-2 border-t border-slate-900/10 py-[6px] px-6 dark:border-slate-50/[0.10]">

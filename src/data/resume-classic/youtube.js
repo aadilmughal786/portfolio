@@ -10,6 +10,7 @@ const data = {
   text1: "Like and",
   text2: "Subscribe",
   videoLink: "https://www.youtube.com/embed/_Vgsjz5d3ow",
+  iframeTitle: "TechFun with Aadil",
 }
 
 export default data
