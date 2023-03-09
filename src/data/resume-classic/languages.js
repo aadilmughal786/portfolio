@@ -3,7 +3,7 @@ import { FaLanguage } from "react-icons/fa"
 import { socilaIconStyle } from "./education"
 
 const data = {
-  title: "Contact",
+  title: "Language",
   icon: <FaLanguage size={25} className={socilaIconStyle} />,
   items: [
     {
