@@ -4,12 +4,8 @@ import { TbExternalLink } from "react-icons/tb"
 const Volunteering = ({ data }) => {
   return (
     <div>
-      <div className="flex flex-row items-center gap-4">
-        <img
-          className="w-14 border border-slate-900/10 p-1 dark:border-slate-50/[0.10]"
-          src={data.logo}
-          alt={data.altText}
-        />
+      <div className="flex flex-row items-center gap-4 ">
+        <span>{data.icon}</span>
         <div className="mb-1">
           <div className="font-medium">{data.role}</div>
           <div className="flex flex-row flex-wrap gap-x-2 gap-y-1 text-sky-700 dark:text-sky-300">
@@ -24,9 +20,9 @@ const Volunteering = ({ data }) => {
           <div className="text-slate-400 dark:text-slate-500">{data.cause}</div>
         </div>
       </div>
-      <div>
+      <div className="flex flex-col gap-1">
         {data.descriptions.map(description => (
-          <div>
+          <div className="flex gap-3">
             <span className="font-semibold text-sky-600 dark:text-sky-300 ">
               {"⤏"}
             </span>{" "}

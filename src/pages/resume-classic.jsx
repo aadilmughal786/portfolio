@@ -5,6 +5,7 @@ import CardItem from "../components/resume-classic/card-item"
 import Contact from "../components/resume-classic/contact"
 import Course from "../components/resume-classic/course"
 import Education from "../components/resume-classic/education"
+import Experience from "../components/resume-classic/experience"
 import GameOfTheDay from "../components/resume-classic/game-of-the-day"
 import Hobby from "../components/resume-classic/hobby"
 import Intro from "../components/resume-classic/intro"
@@ -46,6 +47,18 @@ const Resume = () => {
                 </div>
               </div>
             </CardItem>
+          </Card>
+
+          {/* Experience */}
+          <Card
+            icon={data.experienceData.icon}
+            title={data.experienceData.title}
+          >
+            {data.experienceData.items.map(item => (
+              <CardItem key={item.id}>
+                <Experience data={item} />
+              </CardItem>
+            ))}
           </Card>
 
           {/* Education */}

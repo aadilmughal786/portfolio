@@ -1,6 +1,6 @@
 import React from "react"
 import { MdVolunteerActivism } from "react-icons/md"
-import yefLogo from "../../images/volunteer/yef.jpeg"
+import { CgOrganisation } from "react-icons/cg"
 
 import { socilaIconStyle } from "./education"
 
@@ -10,8 +10,7 @@ const data = {
   items: [
     {
       id: 1,
-      logo: yefLogo,
-      altText: "yef logo",
+      icon: <CgOrganisation size={40} className={socilaIconStyle} />,
       role: "Volunteer",
       organization: "Youth Empowerment Foundation",
       organizationWebsite: "https://yefindia.org",
