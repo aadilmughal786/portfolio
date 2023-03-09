@@ -7,6 +7,7 @@ const GameOfTheDay = ({ data }) => {
       <div>{data.gameIcon}</div>
       <a
         href={data.gameLink}
+        rel="noreferrer"
         target="_blank"
         className="flex flex-row items-center justify-center gap-2 text-slate-600 hover:text-sky-700 dark:text-slate-400 dark:hover:text-sky-300"
       >

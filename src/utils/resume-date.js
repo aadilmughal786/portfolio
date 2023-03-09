@@ -30,8 +30,8 @@ const getYearsAndMonthsFromDays = days => {
     years += 1
   }
 
-  years = years == 0 ? "" : years == 1 ? `one year` : `${years} years`
-  months = months == 0 ? "" : months == 1 ? `one month` : `${months} months`
+  years = years === 0 ? "" : years === 1 ? `one year` : `${years} years`
+  months = months === 0 ? "" : months === 1 ? `one month` : `${months} months`
 
   return `${years} ${months}`
 }

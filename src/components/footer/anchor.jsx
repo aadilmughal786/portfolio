@@ -5,6 +5,7 @@ const Anchor = ({ label, link }) => {
     <a
       href={link}
       target="_blank"
+      rel="noreferrer"
       className="font-medium hover:text-sky-900 dark:hover:text-sky-300"
     >
       {label}

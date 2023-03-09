@@ -10,6 +10,7 @@ const position = {
   MULTIPLE: "multiple",
 }
 
+// for single role/position
 const Single = ({ item }) => (
   <div>
     <div className="mb-2 flex items-center gap-4">
@@ -24,10 +25,10 @@ const Single = ({ item }) => (
         </div>
         <div className="flex flex-wrap justify-between  gap-x-8  text-slate-600/80 dark:text-slate-400">
           <div>{`${formateDate(item.start)} - ${
-            item.end == "present" ? "present" : formateDate(item.end)
+            item.end === "present" ? "present" : formateDate(item.end)
           }`}</div>
           <div className="font-mono">
-            {item.end == "present"
+            {item.end === "present"
               ? getDiff(item.start, getCurrentDateObject())
               : getDiff(item.start, item.end)}
           </div>
@@ -50,6 +51,7 @@ const Single = ({ item }) => (
   </div>
 )
 
+// for multiple role/position
 const Multiple = ({ item }) => (
   <div>
     <div>
@@ -62,7 +64,7 @@ const Multiple = ({ item }) => (
           <div className="flex flex-wrap justify-between  gap-x-8">
             <div>{item.time}</div>
             <div className="font-mono">
-              {item.end == "present"
+              {item.end === "present"
                 ? getDiff(item.start, getCurrentDateObject())
                 : getDiff(item.start, item.end)}
             </div>
@@ -77,13 +79,13 @@ const Multiple = ({ item }) => (
               <div>{position.location}</div>
               <div className="flex flex-wrap justify-between  gap-x-8  text-slate-600/80 dark:text-slate-400">
                 <div>{`${formateDate(position.start)} - ${
-                  position.end == "present"
+                  position.end === "present"
                     ? "present"
                     : formateDate(position.end)
                 }`}</div>
                 <div>
                   {" "}
-                  {position.end == "present"
+                  {position.end === "present"
                     ? getDiff(position.start, getCurrentDateObject())
                     : getDiff(position.start, position.end)}
                 </div>
@@ -109,7 +111,7 @@ const Multiple = ({ item }) => (
 const Experience = ({ data }) => {
   return (
     <div>
-      {data.position == position.SINGLE ? (
+      {data.position === position.SINGLE ? (
         <Single item={data} />
       ) : (
         <Multiple item={data} />
