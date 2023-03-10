@@ -15,7 +15,7 @@ import {
 } from "@heroicons/react/24/solid"
 
 export const socilaIconStyle =
-  "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200"
+  "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-200 cursor-pointer"
 
 const data = {
   left: {
@@ -35,7 +35,7 @@ const data = {
       label: "Contact",
       icon: <UserIcon className={`h-5 w-5 ${socilaIconStyle}`} />,
 
-      to: "/",
+      to: "/contact",
     },
     {
       id: 3,
