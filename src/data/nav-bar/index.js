@@ -41,7 +41,7 @@ const data = {
       id: 3,
       label: "Resume",
       icon: <DocumentIcon className={`h-5 w-5 ${socilaIconStyle}`} />,
-      to: "/",
+      to: "/resume-classic",
     },
     {
       id: 4,
