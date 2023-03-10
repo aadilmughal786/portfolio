@@ -36,12 +36,9 @@ module.exports = {
         name: `Aadil`,
         short_name: `AM`,
         start_url: `/`,
-        background_color: `#663399`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
+        background_color: `#2db6fc`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/site-logo.png`, // This path is relative to the root of the site.
       },
     },
 
