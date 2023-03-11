@@ -1,7 +1,7 @@
 import React from "react"
 import dev from "../../images/developer.svg"
-import PrimeryBtn from "../buttons/primery-btn"
-import SecondaryBtn from "../buttons/secondary-btn"
+import PrimeryBtn from "../../buttons/primery-btn"
+import SecondaryBtn from "../../buttons/secondary-btn"
 import { ArrowLongRightIcon } from "@heroicons/react/24/solid"
 
 const IntroSection = () => {
