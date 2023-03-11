@@ -3,8 +3,12 @@
 @tailwind utilities;
 
 @layer base {
-    html {
-        font-family: 'Poppins', sans-serif;
-    }
+  html {
+    font-family: "Poppins", sans-serif;
+  }
 }
 
+/* Swiper library pagenation dot color */
+.swiper-pagination-bullet-active {
+  background-color: #67b2de !important;
+}
