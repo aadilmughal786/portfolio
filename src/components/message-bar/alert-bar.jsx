@@ -13,7 +13,7 @@ const AlertBar = ({ message }) => {
     <div>
       {showAlert ? (
         <div
-          className={`flex items-center justify-between border-b border-b-red-300 bg-red-100/40 py-1 px-4 text-red-700 dark:bg-red-700/20  dark:text-red-300 sm:px-8`}
+          className={`flex items-center justify-between bg-red-100/40 py-1 px-4 text-red-700 dark:bg-red-700/20  dark:text-red-300 sm:px-8`}
         >
           <div className="flex flex-row items-center gap-3">
             <span>

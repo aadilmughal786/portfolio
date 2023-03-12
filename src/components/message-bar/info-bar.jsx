@@ -13,7 +13,7 @@ const InfoBar = ({ message }) => {
     <div>
       {showInfo ? (
         <div
-          className={`flex items-center justify-between border-b border-b-sky-300 bg-sky-100/40 py-1 px-4 text-sky-700 dark:bg-sky-700/20  dark:text-sky-300 sm:px-8`}
+          className={`flex items-center justify-between bg-sky-100/40 py-1 px-4 text-sky-700 dark:bg-sky-700/20  dark:text-sky-300 sm:px-8`}
         >
           <div className="flex flex-row items-center gap-3">
             <span>
