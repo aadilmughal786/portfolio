@@ -12,7 +12,9 @@ const HomePage = () => (
     <IntroSection />
     <IntroSection /> */}
     <Testimonial data={data.testimonialData} />
+
     <Fact data={data.factData} />
+
     <SkillSection data={data.skillData} />
   </Layout>
 )
