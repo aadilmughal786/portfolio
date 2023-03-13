@@ -24,11 +24,15 @@ const data = {
   about: [
     {
       id: 1,
-      text: "Enthusiastic, hardworking and Creative full stack web developer with a wide variety of skills, looking for a position in web domain where I can enhance my knowledge of design principles and grow with the organization.",
+      text: "I am a self-taught front-end developer based in Rajasthan, India. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences",
     },
     {
       id: 2,
-      text: "I've hands-on experience in software development, mainly in MongoDB, ExpressJS, ReactJS, NodeJS stack(MERN stack), React Native, Bootstrap, Tailwind CSS, Figma and REST APIs.",
+      text: "Transforming my creativity and knowledge into a website has been my passion for over a year. I have developed various projects. I always strive to learn about the newest technologies and frameworks",
+    },
+    {
+      id: 3,
+      text: "I've hands-on experience in software development, mainly in MongoDB, ExpressJS, ReactJS, NodeJS stack(MERN stack), Bootstrap, Tailwind CSS, Figma and REST APIs.",
     },
   ],
 
