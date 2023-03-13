@@ -7,14 +7,12 @@ import Fact from "../components/home/fact/fact"
 import Testimonial from "../components/home/testimonial/testimonial"
 import Marquee from "../components/marquee/marquee"
 import MarqueeChild from "../components/marquee/marquee-child"
+import IntroSection from "../components/home/intro-section/intro-section"
 
 const HomePage = () => (
   <Layout>
-    {/* <IntroSection />
+    {/* intro section */}
     <IntroSection />
-    <IntroSection /> */}
-
-    <Testimonial data={data.testimonialData} />
 
     {/* Marquee */}
     <Marquee direction="left">
@@ -30,6 +28,7 @@ const HomePage = () => (
       </Marquee>
     </div>
 
+    <Testimonial data={data.testimonialData} />
     <Fact data={data.factData} />
 
     <SkillSection data={data.skillData} />
