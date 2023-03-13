@@ -34,7 +34,14 @@ const Resume = () => {
             </CardItem>
 
             {data.introData.about.map(item => (
-              <CardItem key={item.id}>{item.text}</CardItem>
+              <CardItem key={item.id}>
+                <div className="flex gap-3">
+                  <span className="font-semibold text-sky-600 dark:text-sky-300 ">
+                    {"⤏"}
+                  </span>{" "}
+                  {item.text}
+                </div>
+              </CardItem>
             ))}
 
             {/* quote */}
