@@ -11,7 +11,7 @@ const PageNotFound = () => (
       <img
         src={pic}
         alt="page not found png"
-        className="sm:p-16 md:w-1/2 md:p-0 lg:w-auto	"
+        className="sm:p-16 md:w-1/2 md:p-0"
       />
       <div className="flex flex-col items-center gap-4 md:w-1/2 md:items-start lg:w-auto">
         <h1 className="text-3xl font-bold text-sky-800 dark:text-sky-300">
