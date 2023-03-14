@@ -12,7 +12,7 @@ import IntroSection from "../components/home/intro-section/intro-section"
 const HomePage = () => (
   <Layout>
     {/* intro section */}
-    <IntroSection />
+    <IntroSection data={data.introData} />
 
     {/* Marquee */}
     <Marquee direction="left">
