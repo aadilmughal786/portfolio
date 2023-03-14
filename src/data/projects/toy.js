@@ -205,24 +205,24 @@ const data = {
         "It is a simple calculator which do basic stuff computation and fully responsive in any device",
       tools: ["JavaScript", "html", "CSS"],
     },
-    // {
-    //   id: 12,
-    //   icon: <SlCalculator size={50} />,
-    //   links: [
-    //     {
-    //       icon: <SiGithub size={20} />,
-    //       href: "https://github.com/aadilmughal786/simple-web-project/blob/main/acal.html",
-    //     },
-    //     {
-    //       icon: <HiExternalLink size={25} />,
-    //       href: "https://aadilmughal786.github.io/simple-web-project/acal.html",
-    //     },
-    //   ],
-    //   name: "Kon ho tum",
-    //   description:
-    //     "It is a simple calculator which do basic stuff computation and fully responsive in any device",
-    //   tools: ["JavaScript", "html", "CSS"],
-    // },
+    {
+      id: 12,
+      icon: <SlCalculator size={50} />,
+      links: [
+        {
+          icon: <SiGithub size={20} />,
+          href: "https://github.com/aadilmughal786/simple-web-project/blob/main/acal.html",
+        },
+        {
+          icon: <HiExternalLink size={25} />,
+          href: "https://aadilmughal786.github.io/simple-web-project/acal.html",
+        },
+      ],
+      name: "Kon ho tum",
+      description:
+        "It is a simple calculator which do basic stuff computation and fully responsive in any device",
+      tools: ["JavaScript", "html", "CSS"],
+    },
   ],
 }
 
