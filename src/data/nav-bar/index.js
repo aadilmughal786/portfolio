@@ -47,7 +47,7 @@ const data = {
       id: 4,
       label: "Projects",
       icon: <BeakerIcon className={`h-5 w-5 ${socilaIconStyle}`} />,
-      to: "/",
+      to: "/projects",
     },
   ],
   right: [
