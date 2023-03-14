@@ -58,6 +58,10 @@ module.exports = {
             name: "Courgette",
             file: "https://fonts.googleapis.com/css2?family=Courgette&display=swap",
           },
+          {
+            name: "Kurale",
+            file: "https://fonts.googleapis.com/css2?family=Kurale&display=swap",
+          },
         ],
       },
     },

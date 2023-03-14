@@ -47,7 +47,7 @@ const Resume = () => {
             {/* quote */}
             <CardItem>
               <div className="text-center sm:px-8">
-                <div className="mb-1 font-[Courgette] text-xl">
+                <div className="mb-1 font-[Courgette] text-2xl">
                   {data.introData.quote.quote}
                 </div>
                 <div className="font-mono text-sky-700 dark:text-sky-300">

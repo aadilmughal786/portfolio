@@ -12,7 +12,7 @@ const Intro = ({ data }) => {
       />
       <div className="flex flex-1 flex-col items-center gap-[6px] text-center">
         <div className="waving-hand text-4xl">{data.hand}</div>
-        <div className="font-[Courgette] text-2xl">{data.greetText}</div>
+        <div className="font-[Kurale] text-2xl">{data.greetText}</div>
         <div className="flex flex-wrap items-center justify-center gap-1 font-mono">
           {data.text.text1}
           <Typewriter
