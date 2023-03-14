@@ -41,6 +41,19 @@ const TextArea = ({ data }) => {
   )
 }
 
+const SubmitBtn = ({ label, icon, action }) => {
+  return (
+    <button
+      onClick={action}
+      className="box-border inline-flex flex-row items-center items-center justify-between gap-1 rounded bg-gradient-to-r from-sky-400 to-sky-300 px-4 py-1.5 text-slate-700 transition-all duration-75 ease-in hover:gap-2 dark:text-slate-700"
+    >
+      {/* label */}
+      <div>{label}</div>
+      <div>{icon}</div>
+    </button>
+  )
+}
+
 const ContactForm = ({ data }) => {
   return (
     <div className="flex flex-col gap-y-4">
@@ -54,13 +67,16 @@ const ContactForm = ({ data }) => {
       <div>
         <TextArea data={data.message} />
       </div>
+      <div>
+        <SubmitBtn {...data.button} action={() => ""} />
+      </div>
     </div>
   )
 }
 
 const Form = ({ data }) => {
   return (
-    <div className="flex flex-col gap-x-4 gap-y-8 px-4 sm:px-8 md:flex-row md:gap-x-8 lg:px-8">
+    <div className="flex flex-col items-center gap-x-4 gap-y-8 px-4 sm:px-8 md:flex-row md:gap-x-8 lg:px-8">
       <div className="flex basis-1/2 items-end justify-center md:justify-start lg:basis-2/5">
         <img
           className="w-full sm:w-auto md:w-full lg:w-auto"
@@ -70,7 +86,9 @@ const Form = ({ data }) => {
       </div>
       <div className="basis-1/2 lg:basis-3/5">
         <div className="mb-4">
-          <h2 class="text-3xl font-bold  lg:text-4xl">{data.h1}</h2>
+          <h2 class="font-[Kurale] text-3xl  font-bold lg:text-4xl">
+            {data.h1}
+          </h2>
           <div class="mt-4 text-sky-700 dark:text-sky-300">
             {data.h2.text1}{" "}
             <a href={data.h2.href} class="font-medium underline">

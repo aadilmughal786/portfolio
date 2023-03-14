@@ -1,3 +1,5 @@
+import React from "react"
+import { IoMdSend } from "react-icons/io"
 import formImg from "../../images/contact/form.svg"
 
 const data = {
@@ -31,8 +33,8 @@ const data = {
   },
 
   button: {
-    label: "",
-    icon: "",
+    label: "Submit",
+    icon: <IoMdSend />,
   },
 }
 
