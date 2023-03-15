@@ -7,6 +7,7 @@ const data = {
   alt: "developer image",
   hand: "👋",
   name: "I'm Aadil",
+  tagLine: "I build things for the web.",
   text: {
     text1: "I",
     text2: [
