@@ -12,6 +12,7 @@ import {
   DocumentIcon,
   BeakerIcon,
   HeartIcon,
+  RocketLaunchIcon,
 } from "@heroicons/react/24/solid"
 
 export const socilaIconStyle =
@@ -48,6 +49,12 @@ const data = {
       label: "Projects",
       icon: <BeakerIcon className={`h-5 w-5 ${socilaIconStyle}`} />,
       to: "/projects",
+    },
+    {
+      id: 5,
+      label: "Blogs",
+      icon: <RocketLaunchIcon className={`h-5 w-5 ${socilaIconStyle}`} />,
+      to: "/blog",
     },
   ],
   right: [
