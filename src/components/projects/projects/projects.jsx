@@ -31,8 +31,6 @@ const Project = ({ data }) => {
     }
   }
 
-  console.log(`${trackPrevious}  ${trackNext}`)
-
   let startIndex = (currentPage - 1) * ITEM_NUMBER_TO_SHOW
   let endIndex = currentPage * ITEM_NUMBER_TO_SHOW
 

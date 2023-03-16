@@ -1,13 +1,16 @@
 import { Link } from "gatsby"
 import React from "react"
+import BlogSection from "../../components/blog/blog-section/blog-section"
+import Header from "../../components/blog/header/header"
+import Layout from "../../components/layouts/layout"
+import data from "../../data/blog/index"
 
 const Blog = () => {
   return (
-    <div>
-      Blog
-      <Link to="/blog/sorting-algorithm">Sorting</Link>
-      <Link to="/blog/prime-number">prime number</Link>
-    </div>
+    <Layout>
+      <Header data={""} />
+      <BlogSection data={data.blogSection} />
+    </Layout>
   )
 }
 

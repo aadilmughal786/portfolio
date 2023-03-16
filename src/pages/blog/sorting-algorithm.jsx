@@ -1,7 +1,12 @@
 import React from "react"
+import Layout from "../../components/layouts/layout"
 
 const SortingAlgorithm = () => {
-  return <div>SortingAlgorithm</div>
+  return (
+    <Layout>
+      <div>SortingAlgorithm</div>
+    </Layout>
+  )
 }
 
 export default SortingAlgorithm
