@@ -16,17 +16,28 @@ export const metaData = {
 const content = [
   {
     label: "p",
-    data: "lorem impluse lorem impluselorem impluselorem impluselorem impluselorem impluselorem impluselorem impluse",
+    data: `A positive integer which is only divisible by 1 and itself is known as prime number.`,
+  },
+  {
+    label: "p",
+    data: `For example: 13 is a prime number because it is only divisible by 1 and 13 but, 15 is not prime number because it is divisible by 1, 3, 5 and 15.`,
   },
   {
     label: "h2",
-    data: "sdfpsjdfosjd",
+    data: `Example: Check Prime Number`,
   },
   {
     label: "img",
     data: {
       img: img,
       alt: "alt",
+    },
+  },
+  {
+    label: "note",
+    data: {
+      text1: "Note :",
+      text2: "0 and 1 are not prime numbers.",
     },
   },
 ]

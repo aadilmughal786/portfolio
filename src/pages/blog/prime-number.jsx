@@ -28,7 +28,7 @@ const PrimeNumber = () => {
           </div>
 
           {/* Tags */}
-          <div className="flex flex-row flex-wrap gap-2 pt-8">
+          <div className="flex flex-row flex-wrap gap-2 pt-8 pb-4">
             {data.metaData.tags.map(tag => (
               <span className="rounded bg-sky-400/80 px-2 py-[2px] text-xs font-medium text-slate-800 dark:bg-sky-300 dark:text-black">
                 {tag}
