@@ -1,5 +1,6 @@
 import { Link } from "gatsby"
 import React from "react"
+import { BsArrowRight } from "react-icons/bs"
 
 const DESCRIPTION_lIMIT = 100
 
@@ -13,12 +14,20 @@ const BlogCard = ({ data }) => {
         </span>
       </div>
       <div className="px-6 pb-6 pt-2">
-        <div className="pt-3 font-[Kurale] text-xl">{data.title}</div>
-        <div>{data.date}</div>
+        <div className="pt-3 font-[Kurale] text-2xl">{data.title}</div>
+        <div className="rounded py-[2px] pr-2 font-mono text-sm font-medium">
+          {data.date}
+        </div>
         <div className="py-2 text-sky-700 dark:text-sky-300">
           {`${data.description.slice(0, DESCRIPTION_lIMIT)}...`}
         </div>
-        <Link to={data.route}>Read More</Link>
+        <Link
+          to={data.route}
+          className="mt-4 inline-flex items-center gap-4 rounded border border-sky-200 px-4 py-1 font-medium text-sky-700 hover:shadow-md dark:border-sky-400 dark:text-sky-300"
+        >
+          Read More
+          <BsArrowRight />
+        </Link>
       </div>
     </div>
   )

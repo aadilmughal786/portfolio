@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import React from "react"
 import BlogSection from "../../components/blog/blog-section/blog-section"
 import Header from "../../components/blog/header/header"
@@ -8,7 +7,7 @@ import data from "../../data/blog/index"
 const Blog = () => {
   return (
     <Layout>
-      <Header data={""} />
+      <Header data={data.headerData} />
       <BlogSection data={data.blogSection} />
     </Layout>
   )
