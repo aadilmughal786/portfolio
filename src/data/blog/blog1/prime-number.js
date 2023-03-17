@@ -8,8 +8,7 @@ export const metaData = {
   author: authorData,
   chip: "Featured",
   route: "/blog/prime-number",
-  description:
-    "lorem impluse lorem impluselorem impluselorem impluselorem impluselorem impluselorem impluselorem impluse",
+  description: `A positive integer which is only divisible by 1 and itself is known as prime number.`,
   tags: ["C++", "Python"],
 }
 
