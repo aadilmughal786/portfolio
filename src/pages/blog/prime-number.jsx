@@ -1,4 +1,5 @@
 import React from "react"
+import BlogContent from "../../components/blog/blog-content/blog-content"
 import Layout from "../../components/layouts/layout"
 import data from "../../data/blog/blog1/prime-number"
 const PrimeNumber = () => {
@@ -25,12 +26,17 @@ const PrimeNumber = () => {
           </div>
 
           {/* Tags */}
-          <div className="flex flex-row flex-wrap gap-2 pt-8">
+          <div className="flex flex-row flex-wrap gap-2 py-8">
             {data.metaData.tags.map(tag => (
               <span className="rounded bg-sky-400/80 px-2 py-[2px] text-xs font-medium text-slate-800 dark:bg-sky-300 dark:text-black">
                 {tag}
               </span>
             ))}
+          </div>
+
+          {/* Content */}
+          <div className="py-8">
+            <BlogContent data={data.content} />
           </div>
         </div>
       </dir>
