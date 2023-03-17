@@ -1,4 +1,6 @@
 import React from "react"
+import SyntaxHighlighter from "react-syntax-highlighter"
+import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs"
 
 const BlogContent = ({ data }) => {
   return (
@@ -35,6 +37,21 @@ const BlogContent = ({ data }) => {
                 <span className="font-semibold">{item.data.text1}</span>
                 <div>{item.data.text2}</div>
               </div>
+            ) : (
+              ""
+            )}
+          </div>
+
+          {/* for code */}
+          <div>
+            {item.label === "code" ? (
+              <SyntaxHighlighter
+                showLineNumbers={true}
+                language="javascript"
+                style={a11yDark}
+              >
+                {item.data}
+              </SyntaxHighlighter>
             ) : (
               ""
             )}

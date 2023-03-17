@@ -39,6 +39,15 @@ const content = [
       text2: "0 and 1 are not prime numbers.",
     },
   },
+  {
+    label: "code",
+    data: `for (i = 2; i <= n/2; ++i) {
+  if (n % i == 0) {
+    is_prime = false;
+    break;
+  }
+}`,
+  },
 ]
 
 const data = {
