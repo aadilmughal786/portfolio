@@ -2,14 +2,16 @@ import React from "react"
 import BlogContent from "../../components/blog/blog-content/blog-content"
 import Layout from "../../components/layouts/layout"
 import data from "../../data/blog/blog1/prime-number"
+
 const PrimeNumber = () => {
   return (
     <Layout>
       <dir className="justify-center px-4 sm:px-8 md:flex">
         <div className="text-slate-700 dark:text-slate-200 md:w-3/5">
-          <div className="mt-4 font-[Kurale] text-5xl">
+          <div className="mt-4 font-[Kurale] text-4xl sm:text-5xl">
             {data.metaData.title}
           </div>
+
           {/* Author info */}
           <div className="mt-8 flex items-center gap-4">
             <img
@@ -26,7 +28,7 @@ const PrimeNumber = () => {
           </div>
 
           {/* Tags */}
-          <div className="flex flex-row flex-wrap gap-2 py-8">
+          <div className="flex flex-row flex-wrap gap-2 pt-8">
             {data.metaData.tags.map(tag => (
               <span className="rounded bg-sky-400/80 px-2 py-[2px] text-xs font-medium text-slate-800 dark:bg-sky-300 dark:text-black">
                 {tag}
@@ -35,7 +37,7 @@ const PrimeNumber = () => {
           </div>
 
           {/* Content */}
-          <div className="py-8">
+          <div>
             <BlogContent data={data.content} />
           </div>
         </div>
