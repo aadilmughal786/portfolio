@@ -1,5 +1,4 @@
 import React from "react"
-
 import { Code, H2, Img, Note, P } from "./content-type-components/index"
 
 const BlogContent = ({ data }) => {
