@@ -39,7 +39,7 @@ const Project = ({ data }) => {
       <div className="text-center font-[Kurale] text-3xl">{data.label}</div>
       <div className="grid grid-cols-1 gap-x-4 gap-y-8 pt-16 sm:grid-cols-2 md:grid-cols-3 lg:gap-x-12">
         {data.projects.slice(startIndex, endIndex).map(project => (
-          <Card key={project.id} data={project} />
+          <Card data={project} />
         ))}
       </div>
       <div className="flex items-center justify-center gap-4 pt-6 sm:justify-end">
