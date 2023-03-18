@@ -1,6 +1,5 @@
 import React from "react"
-import SyntaxHighlighter from "react-syntax-highlighter"
-import { a11yDark } from "react-syntax-highlighter/dist/esm/styles/hljs"
+import { Code, H2, Img, Note, P } from "./content-type-components/index"
 
 const BlogContent = ({ data }) => {
   return (
@@ -8,54 +7,19 @@ const BlogContent = ({ data }) => {
       {data.map(item => (
         <div className="my-2 md:my-4">
           {/* For p */}
-          <div>{item.label === "p" ? <p>{item.data}</p> : ""}</div>
+          <div>{item.label === "p" ? <P data={item.data} /> : ""}</div>
 
           {/* for h2  */}
-          <div>
-            {item.label === "h2" ? (
-              <h2 className="font-[Kurale] text-2xl text-sky-700 dark:text-sky-300 sm:text-3xl">
-                {item.data}
-              </h2>
-            ) : (
-              ""
-            )}
-          </div>
+          <div>{item.label === "h2" ? <H2 data={item.data} /> : ""}</div>
 
           {/* for img */}
-          <div>
-            {item.label === "img" ? (
-              <img src={item.data.img} alt={item.data.alt} />
-            ) : (
-              ""
-            )}
-          </div>
+          <div>{item.label === "img" ? <Img data={item.data} /> : ""}</div>
 
           {/* for note */}
-          <div>
-            {item.label === "note" ? (
-              <div className="flex gap-4 border-l-4 border-l-sky-600 bg-sky-100/80 p-4 dark:bg-sky-700/20">
-                <span className="font-semibold">{item.data.text1}</span>
-                <div>{item.data.text2}</div>
-              </div>
-            ) : (
-              ""
-            )}
-          </div>
+          <div>{item.label === "note" ? <Note data={item.data} /> : ""}</div>
 
           {/* for code */}
-          <div>
-            {item.label === "code" ? (
-              <SyntaxHighlighter
-                showLineNumbers={true}
-                language="javascript"
-                style={a11yDark}
-              >
-                {item.data}
-              </SyntaxHighlighter>
-            ) : (
-              ""
-            )}
-          </div>
+          <div>{item.label === "code" ? <Code data={item} /> : ""}</div>
         </div>
       ))}
     </div>

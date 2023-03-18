@@ -79,7 +79,7 @@ const Form = ({ data }) => {
     <div className="flex flex-col items-center gap-x-4 gap-y-8 px-4 sm:px-8 md:flex-row md:gap-x-8 lg:px-8">
       <div className="flex basis-1/2 items-end justify-center md:justify-start lg:basis-2/5">
         <img
-          className="w-full sm:w-auto md:w-full lg:w-auto"
+          className="w-full  md:w-full lg:w-auto"
           src={data.img}
           alt={data.imgAlt}
         />
