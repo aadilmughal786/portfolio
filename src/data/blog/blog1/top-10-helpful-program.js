@@ -1,4 +1,4 @@
-import img from "../../../images/blog/blog1/card.png"
+import img from "../../../images/blog/blog1/card.svg"
 import authorData from "../author"
 
 export const metaData = {
