@@ -5,7 +5,7 @@ const BlogInfo = ({ data }) => {
   return (
     <div>
       {/* Blog title  */}
-      <div className="mt-4 font-[Kurale] text-4xl sm:text-5xl">
+      <div className="mt-4 font-[Kurale] text-3xl sm:text-5xl">
         {data.title}
       </div>
 

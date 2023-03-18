@@ -19,7 +19,7 @@ const BlogContent = ({ data }) => {
           <div>{item.label === "note" ? <Note data={item.data} /> : ""}</div>
 
           {/* for code */}
-          <div>{item.label === "code" ? <Code data={item.data} /> : ""}</div>
+          <div>{item.label === "code" ? <Code data={item} /> : ""}</div>
         </div>
       ))}
     </div>

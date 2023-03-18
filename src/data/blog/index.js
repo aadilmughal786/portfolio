@@ -1,4 +1,4 @@
-import { metaData as blog1 } from "./blog1/prime-number.js"
+import { metaData as blog1 } from "./blog1/top-10-helpful-program"
 import headerData from "./header"
 const data = {
   blogSection: {
