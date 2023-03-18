@@ -3,15 +3,22 @@ import React from "react"
 const Card = ({ data }) => {
   return (
     <div className="relative flex flex-col justify-between overflow-hidden rounded border-b-2 border-b-sky-500 bg-slate-100/40 shadow-md hover:shadow-lg dark:bg-slate-900/40">
-      <div className="relative">
-        <img src={data.img} alt={data.name} />
-        <span className="absolute top-2 right-2 rounded bg-sky-400/80 px-2 py-[2px] text-[10px] font-medium text-slate-800 dark:bg-sky-300 dark:text-black">
-          {data.chip}
-        </span>
+      <div
+        className="relative h-56 overflow-hidden bg-cover sm:mb-4"
+        style={{ backgroundImage: `url(${data.img})` }}
+      >
+        {" "}
+        {data.chip === undefined ? (
+          ""
+        ) : (
+          <span className="absolute top-2 right-2 rounded bg-sky-400/80 px-2 py-[2px] text-[10px] font-medium text-slate-800 dark:bg-sky-300 dark:text-black">
+            {data.chip}
+          </span>
+        )}
       </div>
       <div className="px-6 pb-6 pt-2">
         <div className="flex items-center justify-between">
-          <div className="pt-3 font-[Kurale] text-xl">{data.name}</div>
+          <div className="font-[Kurale] text-xl">{data.name}</div>
           <div className="flex items-center gap-3">
             {data.links.map(link => (
               <a href={link.href} target="_blank">
