@@ -20,9 +20,6 @@ const data = {
       "like to buid stuff.",
     ],
   },
-  about:
-    "I am a self-taught front-end developer based in Rajasthan, India. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences",
-
   primaryBtn: {
     label: "Resume",
     to: "/resume-classic",
