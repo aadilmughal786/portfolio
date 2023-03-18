@@ -21,7 +21,7 @@ const Card = ({ data }) => {
           <div className="font-[Kurale] text-xl">{data.name}</div>
           <div className="flex items-center gap-3">
             {data.links.map(link => (
-              <a href={link.href} target="_blank">
+              <a href={link.href} rel="noreferrer" target="_blank">
                 {link.icon}
               </a>
             ))}
