@@ -8,6 +8,8 @@ import Testimonial from "../components/home/testimonial/testimonial"
 import Marquee from "../components/marquee/marquee"
 import MarqueeChild from "../components/marquee/marquee-child"
 import IntroSection from "../components/home/intro-section/intro-section"
+import Form from "../components/contact/form"
+import Project from "../components/home/projects/projects"
 
 const HomePage = () => (
   <Layout>
@@ -30,8 +32,9 @@ const HomePage = () => (
 
     <Testimonial data={data.testimonialData} />
     <Fact data={data.factData} />
-
     <SkillSection data={data.skillData} />
+    <Form data={data.formData} />
+    <Project data={data.projectData} />
   </Layout>
 )
 
