@@ -9,11 +9,9 @@ const Contact = () => {
   return (
     <div>
       <Layout>
-        <div className="text-slate-600 dark:text-slate-300">
-          <InfoBar message={data.messageBarData} />
-          <div className="pt-16 pb-20">
-            <Form data={data.formData} />
-          </div>
+        <InfoBar message={data.messageBarData} />
+        <div className="pt-16 pb-20">
+          <Form data={data.formData} />
         </div>
       </Layout>
     </div>
