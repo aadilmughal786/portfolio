@@ -22,7 +22,7 @@ const data = {
   },
   primaryBtn: {
     label: "Resume",
-    to: "/resume-classic",
+    to: "/resume",
   },
 
   secondaryBtn: {

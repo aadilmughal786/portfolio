@@ -10,7 +10,7 @@ const NavBar = () => {
   return (
     <div className="supports-backdrop-blur:bg-white/50 sticky top-0 z-40 flex w-full flex-col gap-4 border-b border-slate-900/10 bg-white/50 py-3 backdrop-blur dark:border-slate-50/[0.06] dark:bg-transparent">
       <div
-        className={` flex items-center justify-between px-4 sm:px-8 ${
+        className={` flex items-center justify-between px-4 sm:px-8 lg:px-16 ${
           drawer &&
           " border-b pb-3 dark:border-slate-50/[0.06] dark:bg-transparent md:border-b-0 md:pb-0 "
         }`}

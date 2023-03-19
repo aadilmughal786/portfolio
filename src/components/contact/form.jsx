@@ -76,7 +76,7 @@ const ContactForm = ({ data }) => {
 
 const Form = ({ data }) => {
   return (
-    <div className="flex flex-col items-center gap-x-4 gap-y-8 py-16 px-4 sm:px-8 md:flex-row md:gap-x-8 lg:px-8">
+    <div className="flex flex-col items-center gap-x-4 gap-y-8 py-16 px-4 sm:px-8 md:flex-row md:gap-x-8 lg:px-16">
       <div className="flex basis-1/2 items-end justify-center md:justify-start lg:basis-2/5">
         <img
           className="w-full  md:w-full lg:w-auto"

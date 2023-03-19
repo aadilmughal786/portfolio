@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect"
 const IntroSection = ({ data }) => {
   return (
     <div className="flex items-center py-16">
-      <div className="flex w-full flex-col-reverse justify-center gap-6 px-4 sm:px-8 md:flex-row md:items-center md:gap-12">
+      <div className="flex w-full flex-col-reverse justify-center gap-6 px-4 sm:px-8 md:flex-row md:items-center md:gap-12 lg:px-12">
         <div className="flex basis-1/2 flex-col items-center gap-2 text-center md:items-start md:text-start lg:basis-2/5 lg:pr-4">
           <div className="waving-hand w-min text-4xl">{data.hand}</div>
           <div className="font-[Kurale] text-5xl md:text-6xl">{data.name}</div>
