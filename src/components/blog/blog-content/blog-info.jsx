@@ -3,14 +3,12 @@ import React from "react"
 // Top part of blog page like header section
 const BlogInfo = ({ data }) => {
   return (
-    <div>
+    <div className="flex flex-col gap-8 py-8">
       {/* Blog title  */}
-      <div className="my-4 font-[Kurale] text-3xl sm:text-5xl">
-        {data.title}
-      </div>
+      <div className="font-[Kurale] text-3xl sm:text-5xl">{data.title}</div>
 
       {/* Author info */}
-      <div className="mt-8 flex items-center gap-4">
+      <div className="flex items-center gap-4">
         <img
           src={data.author.img}
           alt={data.author.name}
@@ -23,7 +21,7 @@ const BlogInfo = ({ data }) => {
       </div>
 
       {/* Tags */}
-      <div className="flex flex-row flex-wrap gap-2 pt-8 pb-4">
+      <div className="flex flex-row flex-wrap gap-2">
         {data.tags.map(tag => (
           <span className="rounded bg-sky-400/80 px-2 py-[2px] text-xs font-medium text-slate-800 dark:bg-sky-300 dark:text-black">
             {tag}

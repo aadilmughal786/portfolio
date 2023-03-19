@@ -23,7 +23,7 @@ const Resume = () => {
 
   return (
     <Layout>
-      <div className="grid gap-y-8 gap-x-8 px-4 pt-16 pb-20 sm:px-8 lg:grid-cols-3">
+      <div className="grid gap-y-8 gap-x-8 px-4 py-16 sm:px-8 lg:grid-cols-3">
         {/* column-1 */}
         <div className="flex flex-col gap-y-8 lg:col-span-2">
           {/* Intro */}

@@ -8,7 +8,7 @@ const Index = () => {
   return (
     <Layout>
       <dir className="justify-center px-4 sm:px-8 md:flex">
-        <div className="text-slate-700 dark:text-slate-200 md:w-3/5">
+        <div className="md:w-3/5">
           <BlogInfo data={data.metaData} />
           <BlogContent data={data.content} />
         </div>

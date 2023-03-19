@@ -2,7 +2,7 @@ import React from "react"
 
 const Fact = ({ data }) => {
   return (
-    <div className="px-4 py-16 text-slate-700 dark:text-slate-200 sm:px-8">
+    <div className="px-4 py-16 sm:px-8">
       <h2 className="pb-4 text-center text-3xl font-medium ">{data.label}</h2>
       <h3 className="text-center text-xl font-medium text-sky-700 dark:text-sky-300">
         {data.description}
