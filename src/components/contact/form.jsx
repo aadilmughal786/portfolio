@@ -57,7 +57,7 @@ const SubmitBtn = ({ label, icon, action }) => {
 const ContactForm = ({ data }) => {
   return (
     <div className="flex flex-col gap-y-4">
-      <div className="flex flex-col gap-4 md:flex-row">
+      <div className="flex flex-col gap-4 sm:flex-row">
         <Input data={data.name} />
         <Input data={data.email} />
       </div>
@@ -84,7 +84,7 @@ const Form = ({ data }) => {
           alt={data.imgAlt}
         />
       </div>
-      <div className="basis-1/2 lg:basis-3/5">
+      <div className="w-full basis-1/2 lg:basis-3/5">
         <div className="mb-4">
           <h2 class="font-[Kurale] text-3xl  font-bold lg:text-4xl">
             {data.h1}
