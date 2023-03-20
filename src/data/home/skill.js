@@ -1,5 +1,6 @@
 const data = {
   label: "Skills",
+  description: "These are some of technologies i have worked upon",
 
   skills: [
     {
