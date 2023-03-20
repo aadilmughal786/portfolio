@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import SecondaryBtn from "../components/buttons/secondary-btn"
 import Layout from "../components/layouts/layout"
 import Card from "../components/resume/card"
 import CardItem from "../components/resume/card-item"
