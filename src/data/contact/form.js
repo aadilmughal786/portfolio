@@ -34,7 +34,6 @@ const data = {
 
   button: {
     label: "Submit",
-    icon: <IoMdSend />,
   },
 }
 

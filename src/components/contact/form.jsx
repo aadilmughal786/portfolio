@@ -45,11 +45,9 @@ const SubmitBtn = ({ label, icon, action }) => {
   return (
     <button
       onClick={action}
-      className="box-border inline-flex flex-row items-center justify-between gap-1 rounded bg-gradient-to-r from-sky-400 to-sky-300 px-4 py-1.5 text-slate-700 transition-all duration-75 ease-in hover:gap-2 dark:text-slate-700"
+      className="box-border rounded bg-gradient-to-r from-sky-400 to-sky-300 px-4 py-1.5 text-slate-700 transition-all duration-75 ease-in  dark:text-slate-700"
     >
-      {/* label */}
       <div>{label}</div>
-      <div>{icon}</div>
     </button>
   )
 }

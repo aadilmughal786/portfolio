@@ -11,13 +11,11 @@ const data = {
   text: {
     text1: "I",
     text2: [
-      "am from India",
-      "am a web developer.",
-      "love linux.",
-      "am a UI/UX designer.",
       "like to buid stuff",
-      "am a competitive programmer.",
-      "like to buid stuff.",
+      "am a web developer.",
+      "am a UI/UX designer.",
+      "am a linux lover.",
+      "am from India",
     ],
   },
   primaryBtn: {
