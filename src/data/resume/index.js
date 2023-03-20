@@ -11,6 +11,7 @@ import languageData from "./languages"
 import hobbiesData from "./hobbies"
 import youtubeData from "./youtube"
 import experienceData from "./experience"
+import pdfVersionData from "./pdf-version"
 
 const data = {
   eduData,
@@ -26,6 +27,7 @@ const data = {
   hobbiesData,
   youtubeData,
   experienceData,
+  pdfVersionData,
 }
 
 export default data

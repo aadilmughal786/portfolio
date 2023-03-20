@@ -10,6 +10,7 @@ import GameOfTheDay from "../components/resume/game-of-the-day"
 import Hobby from "../components/resume/hobby"
 import Intro from "../components/resume/intro"
 import Language from "../components/resume/language"
+import PdfVersion from "../components/resume/pdf-version"
 import Project from "../components/resume/project"
 import Skill from "../components/resume/skill"
 import Volunteering from "../components/resume/volunteering"
@@ -27,7 +28,6 @@ const Resume = () => {
         {/* column-1 */}
         <div className="flex flex-col gap-y-8 lg:col-span-2">
           {/* Intro */}
-
           <Card icon={data.introData.icon} title={data.introData.title}>
             <CardItem>
               <Intro data={data.introData} />
@@ -57,8 +57,12 @@ const Resume = () => {
             </CardItem>
           </Card>
 
-          {/* Experience */}
+          {/* PDf version of resume (link) */}
+          <div className="block lg:hidden">
+            <PdfVersion data={data.pdfVersionData} />
+          </div>
 
+          {/* Experience */}
           <Card
             icon={data.experienceData.icon}
             title={data.experienceData.title}
@@ -112,8 +116,12 @@ const Resume = () => {
 
         {/* column-2 */}
         <div className="flex flex-col gap-y-8">
-          {/* Contact */}
+          {/* PDf version of resume (link) */}
+          <div className="hidden lg:block">
+            <PdfVersion data={data.pdfVersionData} />
+          </div>
 
+          {/* Contact */}
           <Card icon={data.contactData.icon} title={data.contactData.title}>
             {data.contactData.item.map(item => (
               <CardItem key={item.id}>

@@ -13,6 +13,7 @@ const data = {
   text: {
     text1: "I",
     text2: [
+      "am from India",
       "am a web developer.",
       "love linux.",
       "am a UI/UX designer.",
