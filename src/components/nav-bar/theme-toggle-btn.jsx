@@ -16,15 +16,15 @@ export default function ThemeToggleBtn() {
     <ThemeToggler>
       {({ theme, toggleTheme }) => {
         return (
-          <div className="border-r border-slate-900/10 pr-4 dark:border-slate-50/[0.1]">
+          <div className="border-r border-r-slate-900/10 pr-4 dark:border-r-slate-50/[0.1]">
             {theme === THEME.dark ? (
               <MoonIcon
-                onClick={e => toggleTheme(theme === "light" ? "dark" : "light")}
+                onClick={e => toggleTheme("light")}
                 className={styleForIcon}
               />
             ) : (
               <SunIcon
-                onClick={e => toggleTheme(theme === "light" ? "dark" : "light")}
+                onClick={e => toggleTheme("dark")}
                 className={styleForIcon}
               />
             )}
