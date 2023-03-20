@@ -9,7 +9,7 @@ const Fact = ({ data }) => {
       </h3>
       <div className="grid grid-cols-1 justify-items-center gap-6 sm:grid-cols-2  md:mt-8 lg:grid-cols-4">
         {data.facts.map(fact => (
-          <div className="flex w-full flex-col items-center gap-2 rounded border py-8 px-4 shadow-sky-800 hover:border-sky-300 hover:shadow-md dark:shadow-sky-300">
+          <div className="flex w-full flex-col items-center gap-2 rounded border py-8 px-4 shadow-sky-800 transition-all duration-200 ease-in hover:border-sky-300 hover:shadow-md dark:shadow-sky-300">
             {fact.icon}
             <div className="mt-2 font-mono text-2xl text-sky-700 dark:text-sky-300">
               {fact.value}
