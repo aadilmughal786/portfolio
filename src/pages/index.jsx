@@ -31,9 +31,9 @@ const HomePage = () => (
     </div>
 
     {/* <Testimonial data={data.testimonialData} /> */}
+    <Project data={data.projectData} />
     <Fact data={data.factData} />
     <SkillSection data={data.skillData} />
-    <Project data={data.projectData} />
     <Form data={data.formData} />
   </Layout>
 )
