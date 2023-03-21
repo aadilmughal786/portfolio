@@ -224,6 +224,6 @@ const Resume = () => {
   )
 }
 
-export const Head = () => <Seo title="Classic Resume" />
+export const Head = () => <Seo title="Resume" />
 
 export default Resume

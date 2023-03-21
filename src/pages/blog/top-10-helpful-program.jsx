@@ -2,6 +2,7 @@ import React from "react"
 import BlogContent from "../../components/blog/blog-content/blog-content"
 import BlogInfo from "../../components/blog/blog-content/blog-info"
 import Layout from "../../components/layouts/layout"
+import Seo from "../../components/seo/seo"
 import data from "../../data/blog/blog1/top-10-helpful-program"
 
 const Index = () => {
@@ -16,5 +17,7 @@ const Index = () => {
     </Layout>
   )
 }
+
+export const Head = () => <Seo title="Top 10 helpful programs" />
 
 export default Index

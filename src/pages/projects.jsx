@@ -19,6 +19,6 @@ const Projects = () => {
   )
 }
 
-export const Head = () => <Seo title="Contact" />
+export const Head = () => <Seo title="Projects" />
 
 export default Projects

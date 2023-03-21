@@ -3,7 +3,7 @@ import authorData from "../author"
 
 export const metaData = {
   img: img,
-  title: "Top 10  helpful program",
+  title: "Top 10  helpful programs",
   date: "12 jul 2022",
   author: authorData,
   chip: "New",
