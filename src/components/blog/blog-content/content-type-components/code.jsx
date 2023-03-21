@@ -23,7 +23,7 @@ const Code = ({ data }) => {
   }
 
   return (
-    <div>
+    <div className="mb-8">
       <div className="relative">
         <SyntaxHighlighter
           showLineNumbers={true}
