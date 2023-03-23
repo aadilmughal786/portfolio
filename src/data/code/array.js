@@ -15,8 +15,6 @@ const data = {
     },
     {
       label: "Count digits in an integer",
-      timeComplexity: "O(n)",
-      spaceComplexity: "O(log(n))",
       code: `int countDigit(int n) { 
         return floor(log10(n) + 1); 
       }`,
@@ -24,7 +22,6 @@ const data = {
     {
       label: "Count digits in an integer",
       timeComplexity: "O(n)",
-      spaceComplexity: "O(log(n))",
       code: `int countDigit(int n) { 
         return floor(log10(n) + 1); 
       }`,

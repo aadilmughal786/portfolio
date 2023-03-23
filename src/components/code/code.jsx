@@ -43,8 +43,12 @@ const Code = ({ data }) => {
           >
             <span>{isCopied ? "Copied!" : "Copy"}</span>
           </button>
-          <div className="inline-block rounded-sm border border-sky-500/40 py-[1px] px-3 text-xs">{`TC : ${data.timeComplexity}`}</div>
-          <div className="inline-block rounded-sm border border-sky-500/40 py-[1px] px-3 text-xs">{`SC : ${data.spaceComplexity}`}</div>
+          {data.timeComplexity && (
+            <div className="inline-block rounded-sm border border-sky-500/40 py-[1px] px-3 text-xs">{`TC : ${data.timeComplexity}`}</div>
+          )}
+          {data.spaceComplexity && (
+            <div className="inline-block rounded-sm border border-sky-500/40 py-[1px] px-3 text-xs">{`SC : ${data.spaceComplexity}`}</div>
+          )}
         </div>
       </div>
     </div>

@@ -15,7 +15,7 @@ const Index = () => {
         {data.items.map((item, index) => (
           <Link
             to={item.metaData.to}
-            className="flex w-full flex-row	 items-center justify-between border p-4 font-medium tracking-wider text-sky-700 shadow-sky-800 transition-all duration-200 ease-in hover:border-sky-300 hover:shadow-md dark:text-sky-300 dark:shadow-sky-300 md:w-3/5"
+            className="flex w-full flex-row items-center	 justify-between rounded border p-4 font-medium tracking-wider text-sky-700 shadow-sky-800 transition-all duration-200 ease-in hover:border-sky-300 hover:shadow-md dark:text-sky-300 dark:shadow-sky-300 md:w-3/5"
           >
             {`${index + 1}. ${item.metaData.title}`}
             <TbExternalLink size={20} />

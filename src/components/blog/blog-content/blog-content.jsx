@@ -7,19 +7,19 @@ const BlogContent = ({ data }) => {
       {data.map(item => (
         <div className="my-2 md:my-4">
           {/* For p */}
-          <div>{item.label === "p" ? <P data={item.data} /> : ""}</div>
+          {item.label === "p" && <P data={item.data} />}
 
           {/* for h2  */}
-          <div>{item.label === "h2" ? <H2 data={item.data} /> : ""}</div>
+          {item.label === "h2" && <H2 data={item.data} />}
 
           {/* for img */}
-          <div>{item.label === "img" ? <Img data={item.data} /> : ""}</div>
+          {item.label === "img" && <Img data={item.data} />}
 
           {/* for note */}
-          <div>{item.label === "note" ? <Note data={item.data} /> : ""}</div>
+          {item.label === "note" && <Note data={item.data} />}
 
           {/* for code */}
-          <div>{item.label === "code" ? <Code data={item} /> : ""}</div>
+          {item.label === "code" && <Code data={item} />}
         </div>
       ))}
     </div>
