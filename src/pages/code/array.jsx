@@ -12,7 +12,7 @@ const Index = () => {
           <h2 className="py-16 text-center font-[Kurale] text-2xl md:text-4xl">
             {data.metaData.title}
           </h2>
-          <div className="flex w-full flex-col items-center gap-4 px-4 pb-32 sm:px-8 md:flex lg:px-16">
+          <div className="flex w-full flex-col items-center gap-4 pb-32 md:flex">
             {data.content.map(snippet => (
               <Code data={snippet} />
             ))}

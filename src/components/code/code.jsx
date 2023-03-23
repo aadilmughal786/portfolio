@@ -22,7 +22,7 @@ const Code = ({ data }) => {
       })
   }
   return (
-    <div className="">
+    <div className="w-full">
       <h2 className="mb-2 font-[Kurale] text-2xl text-sky-700 dark:text-sky-300 sm:text-3xl">
         {data.label}
       </h2>
