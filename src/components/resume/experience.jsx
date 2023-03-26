@@ -38,10 +38,10 @@ const Single = ({ item }) => (
         </div>
       </div>
     </div>
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-2">
       {item.points.map(point => (
         <div className="flex gap-3">
-          <span className="font-semibold text-sky-600 dark:text-sky-300 ">
+          <span className="hidden font-semibold text-sky-600 dark:text-sky-300 sm:inline ">
             {"⤏"}
           </span>
           {point}
@@ -98,7 +98,7 @@ const Multiple = ({ item }) => (
     <div className="flex flex-col gap-1">
       {item.points.map(point => (
         <div className="flex gap-3">
-          <span className="font-semibold text-sky-600 dark:text-sky-300 ">
+          <span className="hidden font-semibold text-sky-600 dark:text-sky-300 sm:inline ">
             {"⤏"}
           </span>{" "}
           {point}

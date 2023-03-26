@@ -45,7 +45,7 @@ const SubmitBtn = ({ label, icon, action }) => {
   return (
     <button
       onClick={action}
-      className="box-border rounded bg-gradient-to-r from-sky-400 to-sky-300 px-4 py-1.5 text-slate-700 transition-all duration-75 ease-in  dark:text-slate-700"
+      className="w-full box-border rounded bg-gradient-to-r from-sky-400 to-sky-300 px-4 py-1.5 text-slate-700 transition-all duration-75 ease-in  dark:text-slate-700"
     >
       <div>{label}</div>
     </button>
@@ -65,7 +65,7 @@ const ContactForm = ({ data }) => {
       <div>
         <TextArea data={data.message} />
       </div>
-      <div>
+      <div className="sm:w-28">
         <SubmitBtn {...data.button} action={() => ""} />
       </div>
     </div>

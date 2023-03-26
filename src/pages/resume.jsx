@@ -36,7 +36,7 @@ const Resume = () => {
             {data.introData.about.map(item => (
               <CardItem key={item.id}>
                 <div className="flex gap-3">
-                  <span className="font-semibold text-sky-600 dark:text-sky-300 ">
+                  <span className="hidden font-semibold text-sky-600 dark:text-sky-300 sm:inline ">
                     {"⤏"}
                   </span>{" "}
                   {item.text}

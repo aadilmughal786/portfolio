@@ -20,10 +20,10 @@ const Volunteering = ({ data }) => {
           <div className="text-slate-400 dark:text-slate-500">{data.cause}</div>
         </div>
       </div>
-      <div className="flex flex-col gap-1">
+      <div className="flex flex-col gap-2">
         {data.descriptions.map(description => (
           <div className="flex gap-3">
-            <span className="font-semibold text-sky-600 dark:text-sky-300 ">
+            <span className="hidden sm:inline font-semibold text-sky-600 dark:text-sky-300 ">
               {"⤏"}
             </span>{" "}
             {description}
