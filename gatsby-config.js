@@ -8,6 +8,8 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/portfolio",
+
   siteMetadata: {
     title: `Aadil`,
     description: `Portfolio website of Aadil Mugal`,
