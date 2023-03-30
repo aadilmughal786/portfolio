@@ -3,6 +3,11 @@ import data from "../../data/footer/index"
 import Anchor from "./anchor"
 
 const Footer = () => {
+  function goToTop() {
+    document.body.scrollTop = 0
+    document.documentElement.scrollTop = 0
+  }
+
   return (
     <div className="supports-backdrop-blur:bg-white/60 z-40 flex items-center border-t  border-slate-900/10 bg-white/95 px-4  text-slate-600 backdrop-blur dark:border-slate-50/[0.06] dark:bg-transparent dark:text-slate-300 sm:px-8">
       <div className="flex w-full items-center border-r border-slate-900/10 py-3 pr-8 dark:border-slate-50/[0.1] sm:justify-center sm:gap-4">
@@ -19,8 +24,8 @@ const Footer = () => {
       </div>
 
       {/* go to top btn */}
-      <div className="ml-4 flex h-full items-center justify-center sm:ml-8 ">
-        <a href="#">{data.goToTopIcon}</a>
+      <div className="ml-4 flex h-full items-center justify-center sm:ml-8">
+        <button onClick={goToTop}>{data.goToTopIcon}</button>
       </div>
     </div>
   )

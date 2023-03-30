@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { BsGithub } from "react-icons/bs"
 import Layout from "../components/layouts/layout"
 import Card from "../components/resume/card"
 import CardItem from "../components/resume/card-item"
@@ -54,6 +55,16 @@ const Resume = () => {
                   {data.introData.quote.author}
                 </div>
               </div>
+            </CardItem>
+          </Card>
+
+          {/* Github contribution graph svg */}
+          <Card icon={<BsGithub />} title="Github Contribution Graph">
+            <CardItem>
+              <img
+                src="https://raw.githubusercontent.com/aadilmughal786/aadilmughal786/fe24fa9d46addb22007b162618a6b86a395f2b41/github-contribution-grid-snake.svg"
+                alt="aadil's-contribution-graph-snake"
+              />
             </CardItem>
           </Card>
 
