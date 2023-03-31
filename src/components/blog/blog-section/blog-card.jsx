@@ -6,7 +6,7 @@ const DESCRIPTION_lIMIT = 100
 
 const BlogCard = ({ data }) => {
   return (
-    <div className="relative flex flex-col justify-between overflow-hidden rounded border-b-2 border-b-sky-500 bg-slate-100/40 shadow-md hover:shadow-lg dark:bg-slate-900/40">
+    <div className="relative flex flex-col justify-between overflow-hidden rounded border-b-2 border-b-sky-500 bg-slate-100/40 shadow-md hover:top-[-2px] hover:shadow-lg dark:bg-slate-900/40">
       <div className="relative">
         <img src={data.img} alt={data.title} />
         <span className="absolute top-2 right-2 rounded bg-sky-400/80 px-2 py-[2px] text-[10px] font-medium text-slate-800 dark:bg-sky-300 dark:text-black">

@@ -14,7 +14,7 @@ module.exports = {
     title: `Aadil`,
     description: `Portfolio website of Aadil Mugal`,
     author: `Aadil Mugal <aadilshe786@gmail.com>`,
-    // siteUrl: ``,
+    siteUrl: `https://aadilmughal786.github.io/portfolio`,
   },
 
   plugins: [
@@ -75,6 +75,17 @@ module.exports = {
         color: `#67b2de`,
         // Disable the loading spinner.
         showSpinner: false,
+      },
+    },
+
+    // Bar for blogs
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: [{ regex: "^/blog" }, { regex: "^/code" }],
+        excludePaths: ["/blog/", "/code/"],
+        height: 2,
+        color: `#67b2de`,
       },
     },
   ],

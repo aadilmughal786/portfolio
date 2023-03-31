@@ -2,7 +2,7 @@ import React from "react"
 
 const ToyCard = ({ data }) => {
   return (
-    <div className="flex flex-col justify-between rounded border-b-2 border-b-sky-500 bg-slate-100/40 p-6 shadow-md hover:shadow-lg dark:bg-slate-900/40">
+    <div className="relative flex flex-col justify-between rounded border-b-2 border-b-sky-500 bg-slate-100/40 p-6 shadow-md hover:top-[-2px] hover:shadow-lg dark:bg-slate-900/40">
       <div>
         <div className="flex justify-between ">
           <div>{data.icon}</div>

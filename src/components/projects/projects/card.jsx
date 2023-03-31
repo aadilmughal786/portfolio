@@ -2,7 +2,7 @@ import React from "react"
 
 const Card = ({ data }) => {
   return (
-    <div className="relative flex flex-col justify-between overflow-hidden rounded border-b-2 border-b-sky-500 bg-slate-100/40 shadow-md hover:shadow-lg dark:bg-slate-900/40">
+    <div className="relative flex flex-col justify-between overflow-hidden rounded border-b-2 border-b-sky-500 bg-slate-100/40 shadow-md hover:top-[-2px] hover:shadow-lg dark:bg-slate-900/40">
       <div
         className="relative h-56 overflow-hidden bg-cover sm:mb-4"
         style={{ backgroundImage: `url(${data.img})` }}

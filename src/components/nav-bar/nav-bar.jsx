@@ -30,7 +30,7 @@ const NavBar = () => {
             <Link
               key={item.id}
               to={item.to}
-              className="font-semibold  hover:text-sky-900  dark:hover:text-sky-300"
+              className="font-semibold  tracking-wide  hover:text-sky-900 dark:hover:text-sky-300"
             >
               {item.label}
             </Link>
