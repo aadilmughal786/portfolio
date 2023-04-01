@@ -59,12 +59,33 @@ const Resume = () => {
           </Card>
 
           {/* Github contribution graph svg */}
-          <Card icon={<BsGithub />} title="Github Contribution Graph">
+          <Card icon={<BsGithub />} title="Github Statistics">
             <CardItem>
               <img
                 src="https://raw.githubusercontent.com/aadilmughal786/aadilmughal786/fe24fa9d46addb22007b162618a6b86a395f2b41/github-contribution-grid-snake.svg"
                 alt="aadil's-contribution-graph-snake"
               />
+            </CardItem>
+            <CardItem>
+              <img
+                src="https://github-readme-activity-graph.cyclic.app/graph?username=aadilmughal786&theme=react-dark&bg_color=20263c100&hide_border=true&hide_title=true&area=true&point=2ba7fb"
+                alt="aadil's-contribution-graph"
+                width="100%"
+              />
+            </CardItem>
+            <CardItem>
+              <div className="flex flex-col flex-wrap gap-y-4 gap-x-4 md:flex-row">
+                <img
+                  src="https://github-readme-streak-stats.herokuapp.com/?user=aadilmughal786&theme=react&border=61dafb&hide_border=true"
+                  alt="aadil's-streak"
+                  width="100%"
+                />
+                <img
+                  src="https://github-readme-stats.vercel.app/api?username=aadilmughal786&show_icons=true&theme=react&border_color=61dafb&hide_border=true"
+                  alt="aadil's-stats"
+                  width="100%"
+                />
+              </div>
             </CardItem>
           </Card>
 
