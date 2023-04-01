@@ -19,7 +19,7 @@ const Project = ({ data }) => {
           </div>
         </div>
       </div>
-      <div className="mb-1">{data.description}</div>
+      <div className="my-3">{data.description}</div>
       <div className="flex flex-row flex-wrap gap-x-2 gap-y-1 text-xs font-medium text-sky-700 dark:text-sky-300">
         {data.projects.map(project => (
           <a href={project.href} target="_blank" rel="noreferrer">
