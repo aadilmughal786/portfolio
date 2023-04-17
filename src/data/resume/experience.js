@@ -33,18 +33,18 @@ const data = {
       icon: <CgOrganisation size={40} className={socilaIconStyle} />,
       name: "Jalan Technology Consulting",
       time: "Full-Time",
-      start: new Date(2021, 10 - 1),
+      start: new Date(2022, 10 - 1),
       end: "present",
       positions: [
         {
           role: "Software Intern",
-          start: new Date(2021, 10 - 1),
-          end: new Date(2022, 5 - 1),
+          start: new Date(2022, 10 - 1),
+          end: new Date(2023, 4 - 1),
           location: "Remote",
         },
         {
           role: "Software Engineer",
-          start: new Date(2022, 5 - 1),
+          start: new Date(2023, 5 - 1),
           end: "present",
           location: "Remote",
         },
