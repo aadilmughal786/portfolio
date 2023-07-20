@@ -48,6 +48,13 @@ const Single = ({ item }) => (
         </div>
       ))}
     </div>
+    <div className="mt-1">
+      {item.technologies.map(chip => (
+        <span className="rounded bg-sky-400/80 px-2 py-[2px] text-[10px] font-medium text-slate-800 dark:bg-sky-300 dark:text-black">
+          {chip}
+        </span>
+      ))}
+    </div>
   </div>
 )
 
@@ -103,6 +110,13 @@ const Multiple = ({ item }) => (
           </span>{" "}
           {point}
         </div>
+      ))}
+    </div>
+    <div className="mt-1">
+      {item.technologies.map(chip => (
+        <span className="rounded bg-sky-400/80 px-2 py-[2px] text-[10px] font-medium text-slate-800 dark:bg-sky-300 dark:text-black">
+          {chip}
+        </span>
       ))}
     </div>
   </div>

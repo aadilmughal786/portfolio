@@ -19,21 +19,20 @@ const data = {
       "am a UI/UX designer.",
       "like to buid stuff",
       "am a competitive programmer.",
-      "like to buid stuff.",
     ],
   },
   about: [
     {
       id: 1,
-      text: "I am a self-taught front-end developer based in Rajasthan, India. I can develop responsive websites from scratch and raise them into modern user-friendly web experiences",
+      text: "Experienced Full Stack Web Developer from Rajasthan, India, with a passion for crafting stunning and user-friendly websites. Self-taught and thriving, my journey spans over a year, packed with successful projects. Always at the forefront of tech trends, I'm ready to deliver unparalleled results! Let's build something incredible together",
     },
     {
       id: 2,
-      text: "Transforming my creativity and knowledge into a website has been my passion for over a year. I have developed various projects. I always strive to learn about the newest technologies and frameworks",
+      text: "Passionate about transforming creativity into stunning websites. Over a year of successful project experience, always staying updated with the latest technologies for unparalleled results",
     },
     {
       id: 3,
-      text: "I've hands-on experience in software development, mainly in MongoDB, ExpressJS, ReactJS, NodeJS stack(MERN stack), Bootstrap, Tailwind CSS, Figma and REST APIs.",
+      text: "Experienced Full Stack Web Developer proficient in the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS), Bootstrap, Tailwind CSS, Figma, and REST APIs. Skilled in JavaScript, TypeScript, Postman, Gatsby, Jira, Git, GitHub, and GitHub Actions",
     },
   ],
 

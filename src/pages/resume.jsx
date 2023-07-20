@@ -62,15 +62,8 @@ const Resume = () => {
           <Card icon={<BsGithub />} title="Github Contributions">
             <CardItem>
               <img
-                src="https://raw.githubusercontent.com/aadilmughal786/aadilmughal786/fe24fa9d46addb22007b162618a6b86a395f2b41/github-contribution-grid-snake.svg"
+                src="https://github.com/aadilmughal786/aadilmughal786/raw/output/github-contribution-grid-snake.svg"
                 alt="aadil's-contribution-graph-snake"
-              />
-            </CardItem>
-            <CardItem>
-              <img
-                src="https://github-readme-activity-graph.cyclic.app/graph?username=aadilmughal786&theme=react-dark&bg_color=20263c100&hide_border=true&hide_title=true&area=true&point=2ba7fb"
-                alt="aadil's-contribution-graph"
-                width="100%"
               />
             </CardItem>
           </Card>
