@@ -9,7 +9,7 @@ export const metaData = {
   chip: "New",
   route: "/blog/top-10-helpful-program",
   description: `Here are 10 most helpful program code snippets that I use during coding contest which can be used as subroutine`,
-  tags: ["C++"],
+  tags: ["C++", "Competitive Programming", "Problem Solving"],
 }
 
 // Labels => p, h2, img, code, note
