@@ -7,7 +7,7 @@ const ITEM_NUMBER_TO_SHOW = 6
 const Toy = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(1)
   const [trackNext, setTrackNext] = useState(true)
-  const [trackPrevious, setTrackPrivious] = useState(false)
+  const [trackPrevious, setTrackPrevious] = useState(false)
 
   const totalPage = Math.ceil(data.projects.length / ITEM_NUMBER_TO_SHOW)
 
