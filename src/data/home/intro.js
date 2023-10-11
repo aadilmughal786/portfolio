@@ -11,7 +11,7 @@ const data = {
   text: {
     text1: "I",
     text2: [
-      "like to buid stuff",
+      "like to build stuff",
       "am a web developer.",
       "am a UI/UX designer.",
       "am a linux lover.",

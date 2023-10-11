@@ -23,12 +23,12 @@ const data = {
     },
     {
       icon: <FaSmile size={ICON_SIZE} className={socilaIconStyle} />,
-      value: "6M",
+      value: "1 Year",
       label: "Experience In Web",
     },
     {
       icon: <SiCoursera size={ICON_SIZE} className={socilaIconStyle} />,
-      value: "25+",
+      value: "20+",
       label: "Courses Done",
     },
   ],

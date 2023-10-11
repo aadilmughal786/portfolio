@@ -18,8 +18,8 @@ const data = {
       icon: <FaGraduationCap size={40} className={socilaIconStyle} />,
       educationType: "Undergraduate Education",
       instituteName: "University Of Engineering & Management, Jaipur",
-      description: "Currently, I am in 4th year. My average score is 8.03 GPA.",
-      status: "⤎ Pursuing",
+      description: "Currently, I am in 4th year. My average score is 8 GPA.",
+      status: "Completed",
       year: "2023",
     },
     {

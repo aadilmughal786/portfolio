@@ -24,7 +24,7 @@ const data = {
       ],
       name: "WhapApp chat Analyzer",
       description:
-        "WhatApp chat analyzer App for indivisual or group chat insights.",
+        "WhatApp chat analyzer App for individual or group chat insights.",
       tools: ["Python", "StreamLit", "Pandas"],
     },
 
@@ -69,7 +69,7 @@ const data = {
         },
       ],
       name: "React MUI Frontend",
-      description: "A Frondend web app using ReactJS and Material-UI",
+      description: "A Frontend web app using ReactJS and Material-UI",
       tools: ["reactJS", "NodeJS", "MUI"],
     },
   ],

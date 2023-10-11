@@ -23,7 +23,7 @@ const Volunteering = ({ data }) => {
       <div className="flex flex-col gap-2">
         {data.descriptions.map(description => (
           <div className="flex gap-3">
-            <span className="hidden sm:inline font-semibold text-sky-600 dark:text-sky-300 ">
+            <span className="hidden font-semibold text-sky-600 dark:text-sky-300 sm:inline ">
               {"⤏"}
             </span>{" "}
             {description}

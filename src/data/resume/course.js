@@ -22,7 +22,7 @@ const data = {
       courseName: "Problem Solving Through Programming In C",
       courseLink:
         "https://drive.google.com/file/d/1wQ3fQXPxczvYPj1XTczrppbkAODDVuJD",
-      instituteName: "IIT Kharagpur(nptel-94%)",
+      instituteName: "IIT Kharagpur(nptel-94% Topper)",
       time: "Jan-Apr 2022",
     },
     {

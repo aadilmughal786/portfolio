@@ -42,7 +42,7 @@ const data = {
       ],
       name: "Notes App",
       description:
-        "A simple notes taking app which do basic notes stuff and use browser's local storage to preserve your data for furder use",
+        "A simple notes taking app which do basic notes stuff and use browser's local storage to preserve your data for future use",
       tools: ["JavaScript", "html", "CSS"],
     },
 
@@ -75,8 +75,8 @@ const data = {
           href: "https://aadilmughal786.github.io/simple-web-project/dino.html",
         },
       ],
-      name: "Dinosour game",
-      description: "A Dinosour game just for full",
+      name: "Dinosaur game",
+      description: "A Dinosaur game just for full",
       tools: ["JavaScript", "html", "CSS", "Local Storage"],
     },
 
@@ -92,8 +92,8 @@ const data = {
           href: "https://aadilmughal786.github.io/simple-web-project/flexgal.html",
         },
       ],
-      name: "Flex galary",
-      description: "A simple image galary using css flexbox layout",
+      name: "Flex gallery",
+      description: "A simple image gallery using css flexbox layout",
       tools: ["JavaScript", "html", "CSS", "Flexbox"],
     },
 
@@ -144,7 +144,7 @@ const data = {
         },
       ],
       name: "Contact Card",
-      description: "Glassy lokking contact catd UI",
+      description: "Glassy looking contact card UI",
       tools: ["JavaScript", "html", "CSS"],
     },
 
@@ -161,7 +161,7 @@ const data = {
         },
       ],
       name: "Weather UI",
-      description: "A simple glassy lokking weather info card",
+      description: "A simple glassy looking weather info card",
       tools: ["JavaScript", "html", "CSS"],
     },
 
@@ -195,8 +195,8 @@ const data = {
           href: "https://aadilmughal786.github.io/The-Odin-Project/Foundations/odin-recipes/index.html",
         },
       ],
-      name: "My favourite Recipes",
-      description: "A Simple project on my favourite food Recipes",
+      name: "My favorite Recipes",
+      description: "A Simple project on my favorite food Recipes",
       tools: ["JavaScript", "html", "CSS"],
     },
 

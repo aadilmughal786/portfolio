@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 import Card from "./card"
 
@@ -7,32 +7,29 @@ const ITEM_NUMBER_TO_SHOW = 3
 const Project = ({ data }) => {
   const [currentPage, setCurrentPage] = useState(1)
   const [trackNext, setTrackNext] = useState(true)
-  const [trackPrevious, setTrackPrivious] = useState(false)
+  const [trackPrevious, setTrackPrevious] = useState(false)
 
   const totalPage = Math.ceil(data.projects.length / ITEM_NUMBER_TO_SHOW)
 
   const previousItems = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1)
-      currentPage > 1 ? setTrackPrivious(true) : setTrackPrivious(false)
-      setTrackNext(true)
-    } else {
-      setTrackPrivious(false)
     }
   }
 
   const nextItems = () => {
     if (currentPage < totalPage) {
       setCurrentPage(currentPage + 1)
-      currentPage < totalPage ? setTrackNext(true) : setTrackNext(false)
-      setTrackPrivious(true)
-    } else {
-      setTrackNext(false)
     }
   }
 
   let startIndex = (currentPage - 1) * ITEM_NUMBER_TO_SHOW
   let endIndex = currentPage * ITEM_NUMBER_TO_SHOW
+
+  useEffect(() => {
+    currentPage > 1 ? setTrackPrevious(true) : setTrackPrevious(false)
+    currentPage < totalPage ? setTrackNext(true) : setTrackNext(false)
+  }, [currentPage])
 
   return (
     <div className="px-4 py-16 sm:px-8 lg:px-16">

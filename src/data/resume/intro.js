@@ -24,15 +24,15 @@ const data = {
   about: [
     {
       id: 1,
-      text: "Experienced Full Stack Web Developer from Rajasthan, India, with a passion for crafting stunning and user-friendly websites. Self-taught and thriving, my journey spans over a year, packed with successful projects. Always at the forefront of tech trends, I'm ready to deliver unparalleled results! Let's build something incredible together",
+      text: "I'm an accomplished Full Stack Web Developer based in Rajasthan, India, with a year of extensive experience. My passion lies in crafting visually stunning and user-friendly websites that make a lasting impact. As a self-taught developer, I've thrived on successfully delivering a range of projects.",
     },
     {
       id: 2,
-      text: "Passionate about transforming creativity into stunning websites. Over a year of successful project experience, always staying updated with the latest technologies for unparalleled results",
+      text: "My skill set includes proficiency in the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS), Bootstrap, Tailwind CSS, and working with tools like Figma and REST APIs. I'm well-versed in JavaScript and TypeScript, and I'm experienced in Postman, Gatsby, Jira, Git, GitHub, and GitHub Actions.",
     },
     {
       id: 3,
-      text: "Experienced Full Stack Web Developer proficient in the MERN stack (MongoDB, ExpressJS, ReactJS, NodeJS), Bootstrap, Tailwind CSS, Figma, and REST APIs. Skilled in JavaScript, TypeScript, Postman, Gatsby, Jira, Git, GitHub, and GitHub Actions",
+      text: "I bring a year of proven success, a passion for creativity, and a commitment to staying at the cutting edge of web development. My goal is simple: To craft user-friendly websites that exceed expectations and make a lasting impact. Let's collaborate and build something extraordinary together.",
     },
   ],
 
