@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import ToyCard from "./toy-card"
 import { BsArrowLeft, BsArrowRight } from "react-icons/bs"
 
