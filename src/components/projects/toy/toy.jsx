@@ -14,33 +14,28 @@ const Toy = ({ data }) => {
   const previousItems = () => {
     if (currentPage > 1) {
       setCurrentPage(currentPage - 1)
-      currentPage > 1 ? setTrackPrivious(true) : setTrackPrivious(false)
-      setTrackNext(true)
-    } else {
-      setTrackPrivious(false)
     }
   }
 
   const nextItems = () => {
     if (currentPage < totalPage) {
       setCurrentPage(currentPage + 1)
-      currentPage < totalPage ? setTrackNext(true) : setTrackNext(false)
-      setTrackPrivious(true)
-    } else {
-      setTrackNext(false)
     }
   }
 
-  console.log(`${trackPrevious}  ${trackNext}`)
-
   let startIndex = (currentPage - 1) * ITEM_NUMBER_TO_SHOW
   let endIndex = currentPage * ITEM_NUMBER_TO_SHOW
+
+  useEffect(() => {
+    currentPage > 1 ? setTrackPrevious(true) : setTrackPrevious(false)
+    currentPage < totalPage ? setTrackNext(true) : setTrackNext(false)
+  }, [currentPage])
 
   return (
     <div className="px-4 py-16 sm:px-8 lg:px-16">
       <div className="text-center font-[Kurale] text-3xl">{data.label}</div>
 
-      <div className="flex items-center justify-center gap-4 pt-6 sm:justify-end">
+      <div className="flex items-center justify-center gap-4 pt-6 md:justify-end">
         <button
           onClick={e => previousItems()}
           className={`${

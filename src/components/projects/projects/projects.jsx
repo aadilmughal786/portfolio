@@ -35,7 +35,7 @@ const Project = ({ data }) => {
     <div className="px-4 py-16 sm:px-8 lg:px-16">
       <div className="text-center font-[Kurale] text-3xl">{data.label}</div>
 
-      <div className="flex items-center justify-center gap-4 pt-6 sm:justify-end">
+      <div className="flex items-center justify-center gap-4 pt-6 md:justify-end">
         <button
           onClick={e => previousItems()}
           className={`${
